@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="93b78ace-5a1e-4ff9-8d4a-180902fa4c59">
+  <producedTypes>
+    <objectType typeId="48612068-5b01-40ae-b419-11c7cc7aef2e" valueTypeId="12bfc4a7-2fae-4e52-89d2-5729ad67f784"/>
+    <managerType typeId="384b66b0-9c62-49fb-ae96-8c41decdc2a6" valueTypeId="4e73bdce-fc32-49e8-8b8f-baecaa51b3e6"/>
+  </producedTypes>
+  <name>Материалы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обороты номенклатуры</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.Материалы.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.Материалы.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <explanation>
+    <key>ru</key>
+    <value>Приход и расход номенклатуры</value>
+  </explanation>
+  <forms uuid="c9470d1e-5d06-49b1-9575-64627c0cf096">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="0a1b4336-c75a-4f3b-8db1-b55cdbbd25c8">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

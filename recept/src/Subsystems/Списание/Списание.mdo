@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="22361e4d-6ba7-4f3b-beb9-e390efefeda9">
+  <name>Списание</name>
+  <synonym>
+    <key>ru</key>
+    <value>Списание в производство</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <useOneCommand>true</useOneCommand>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Списание</picture>
+  </picture>
+</mdclass:Subsystem>

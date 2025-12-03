@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d105cbc9-1f3c-4cb6-8553-971486f411c2">
+  <name>Тендер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тендер</value>
+  </synonym>
+  <availabilityForChoice>true</availabilityForChoice>
+</mdclass:CommonPicture>

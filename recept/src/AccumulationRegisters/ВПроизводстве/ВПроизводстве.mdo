@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4102578d-c4c2-47cd-8913-1f0473589af0">
+  <producedTypes>
+    <selectionType typeId="ae7d4f74-3ea6-4254-9130-4c6c378616a8" valueTypeId="4a82bc2a-72cb-4f4b-9bad-d5b2360b49e1"/>
+    <listType typeId="a0ff1f65-c35e-4094-a3b2-8f24cca729c6" valueTypeId="ae5be593-f67a-48cd-84d8-e6fea27cb479"/>
+    <managerType typeId="5c956fb9-8aed-463f-8302-e282debd9995" valueTypeId="949a86b0-997b-4048-94af-5f0dee6b899d"/>
+    <recordSetType typeId="d205c5fa-01bd-41ba-8a9d-666eea65d979" valueTypeId="644b5c27-e2c1-4a67-9748-331bb87a08b4"/>
+    <recordKeyType typeId="4cf8ec91-0a23-49fe-be4d-9f4909b31d96" valueTypeId="bf53ee02-767f-47fa-81e0-922d990c21fc"/>
+    <recordType typeId="73eeb0a3-4780-4dcd-b1f5-53ef74bfaeac" valueTypeId="aae711ef-0300-432f-aa32-cbd36f4aca57"/>
+  </producedTypes>
+  <name>ВПроизводстве</name>
+  <synonym>
+    <key>ru</key>
+    <value>В производстве</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="054033ab-665e-43af-8d40-1cbd50267ccd">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="1359e556-f677-45c2-b9ac-1ba91f2e4e57">
+    <name>Наименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НоменклатураМатериалы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="acd50be6-1094-4bd8-96d0-4256742abb42">
+    <name>НомерПроизводства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер производства</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eaa848ae-51d2-44ec-bcd4-e8d9ec10ca2d">
+  <producedTypes>
+    <objectType typeId="9b5f5a8c-a413-4516-a2b0-0aa0461f5233" valueTypeId="2cc24e1d-da41-460f-aa2e-86bcf281d316"/>
+    <managerType typeId="6e337e00-041d-4975-ba8a-fb347e2f6a5a" valueTypeId="c47fdedc-fffd-416a-80e2-24ebd8be1fe7"/>
+  </producedTypes>
+  <name>МинимальныйЗапас</name>
+  <synonym>
+    <key>ru</key>
+    <value>Минимальный запас</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.МинимальныйЗапас.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="35f97bd9-9b90-4c6b-8681-a2a18c68d2ba">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3689ef6d-8c51-427e-829f-357416e618f1">
+  <name>Тендеры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тендеры</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <useOneCommand>true</useOneCommand>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Тендер</picture>
+  </picture>
+  <content>Document.Тендер</content>
+</mdclass:Subsystem>

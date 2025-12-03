@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9df9266f-3275-4081-94db-4e1dedf02146">
+  <name>НСИ</name>
+  <synonym>
+    <key>ru</key>
+    <value>НСИ</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ОбщаяКартинка6</picture>
+  </picture>
+  <content>Catalog.НоменклатураМатериалы</content>
+  <content>Catalog.Покупатели</content>
+  <content>Catalog.Пользователи</content>
+  <content>Catalog.Поставщики</content>
+  <content>Catalog.Цвет</content>
+  <content>Catalog.RAL</content>
+  <content>Catalog.Фасовка</content>
+  <content>Catalog.МестоХранения</content>
+  <content>InformationRegister.СведенияВПродукцииИзСчетов</content>
+  <content>Document.ВозвратОтПокупателя</content>
+  <content>InformationRegister.СтатусОбеспеченияЗаказа</content>
+  <content>Document.КоррекцияОстатков</content>
+  <content>Enum.СтатусыАрбитражнойПробы</content>
+  <content>Document.АрбитражнаяПроба</content>
+  <content>CommonForm.ФормаСпискаСырья</content>
+</mdclass:Subsystem>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e113cb4f-d9a5-4bb8-98d5-b7cc7ef7ef1a">
+  <producedTypes>
+    <selectionType typeId="22829394-e5ab-4cca-84d9-cfac6300d10d" valueTypeId="34cb7b74-a9de-4821-a5cb-c5f4a94acb1d"/>
+    <listType typeId="ddd4fca5-eb7e-453a-bb97-391dae580e2a" valueTypeId="ea923575-5ece-4ef6-8eda-8f3e539eae50"/>
+    <managerType typeId="b608ec87-efbe-484b-9770-495fcc1da10e" valueTypeId="06c3e658-2271-4271-a606-fc4e7aa1aff4"/>
+    <recordSetType typeId="6ebb117a-ba08-4943-b0e3-803d7929321a" valueTypeId="845a3637-881f-4c78-b6a6-84a50e4b0046"/>
+    <recordKeyType typeId="48957f5d-7767-42b0-9e44-e475e86c7dbb" valueTypeId="35853234-2b3c-4fa5-a5ee-4460a5689279"/>
+    <recordType typeId="0147fbe7-a3f3-45e4-a66e-8fa6c7d93d0c" valueTypeId="5925b98e-1993-4021-9879-107ad09ed292"/>
+    <recordManagerType typeId="e2158a2f-d477-4354-a136-302d46e649e9" valueTypeId="fa201291-f32f-47ed-be08-268f64b0c8fc"/>
+  </producedTypes>
+  <name>АрбитражнаяПроба</name>
+  <synonym>
+    <key>ru</key>
+    <value>Арбитражная проба</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a3d1c747-7432-4178-a733-3790a587976c">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыАрбитражнойПробы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f05b07f8-7e2e-4e10-9014-cccc4406f677">
+    <name>ДокументОснованияПробы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ основания пробы</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.Рецептуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

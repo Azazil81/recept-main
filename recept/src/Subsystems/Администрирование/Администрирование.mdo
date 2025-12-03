@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1c2300a9-d188-4010-953b-6838d1f5d83a">
+  <name>Администрирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Администрирование</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Администрирование</picture>
+  </picture>
+  <content>Document.КоррекцияЦены</content>
+  <content>AccumulationRegister.ВПроизводстве</content>
+  <content>Document.ПервоначальныеОстатки</content>
+  <content>InformationRegister.ЦенаПокупки</content>
+  <content>Document.ВыпускПродукции</content>
+  <content>Catalog.Пользователи</content>
+  <content>AccumulationRegister.СтоимостьМатериалов</content>
+  <content>InformationRegister.Рецепт</content>
+  <content>Document.ДокументПродажи</content>
+  <content>AccumulationRegister.Продано</content>
+  <content>Enum.ПриоритетЗаявки</content>
+  <content>Enum.СтатусыЗаказаКлиента</content>
+  <content>Enum.СтатусыГотовностиПродукции</content>
+  <content>Catalog.ВариантыНоменклатуры</content>
+  <content>Catalog.ДополнительныеСвойстваНоменклатуры</content>
+  <content>InformationRegister.ЗначенияСвойствНоменклатуры</content>
+  <content>ChartOfCharacteristicTypes.СвойстваНоменклатуры</content>
+  <content>Catalog.Цвет</content>
+  <content>Catalog.RAL</content>
+  <content>InformationRegister.СтатусПродукции</content>
+  <content>Catalog.Фасовка</content>
+  <content>AccumulationRegister.СтоимостьПродажи</content>
+  <content>Report.ДокументыСписанияСырьяВПроизводство</content>
+  <content>CommonForm.ФормаСпискаЗаявок</content>
+  <content>Catalog.МестоХранения</content>
+  <content>Report.РасшифровкаОборотовНоменклатуры</content>
+  <content>InformationRegister.АрбитражнаяПроба</content>
+</mdclass:Subsystem>

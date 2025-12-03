@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e6b869fb-fe25-48dc-a006-e3fe3c02e3b5">
+  <producedTypes>
+    <selectionType typeId="7f9d8ad1-b140-4781-b71d-a7a619df28c8" valueTypeId="66bd26a9-aa17-469d-953a-7d200878dca0"/>
+    <listType typeId="bbe5b490-ad28-4481-8a32-40d35cdbf2e4" valueTypeId="f0b55cfb-4765-461b-b702-e0b7daa5b19a"/>
+    <managerType typeId="05b78c0d-5f86-4cee-923c-f8f41fd43039" valueTypeId="67fe0199-131c-491c-84f1-f01fa57ae31d"/>
+    <recordSetType typeId="c9e9ce30-d9ff-46c6-8067-6fda7c56220a" valueTypeId="64927b13-71a8-4ee4-852b-8562b03ff33a"/>
+    <recordKeyType typeId="0dd3d75e-8ff6-4757-a867-093a77959bd0" valueTypeId="094dc43d-ffe9-4a9b-8711-d8a9c0870cb5"/>
+    <recordType typeId="b46c2225-95d5-48c5-bf48-7b9a4fe9238b" valueTypeId="acd9e507-a0b0-4d67-9b23-eb0243fcabce"/>
+  </producedTypes>
+  <name>СоставРецептур</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состав рецептур</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="fa6fa12b-e4f3-4ef6-946e-419243d11bfb">
+    <name>КоличествоСырьяНаТонну</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество сырья на тонну</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="363ed5e5-b8e5-4a41-a81c-4dbbefa01f0c">
+    <name>Наименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="9e0d739b-7398-4b82-8a00-9e28889398ab">
+    <name>ЦенаЗаКг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена за кг</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="0c35190e-62a6-45e8-a057-76e67aaeedcc">
+    <name>Материал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Материал</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

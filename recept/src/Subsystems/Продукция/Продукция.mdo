@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="263d3fdf-8a1e-40b1-b642-0f5073c32d78">
+  <name>Продукция</name>
+  <synonym>
+    <key>ru</key>
+    <value>Продукция</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <useOneCommand>true</useOneCommand>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Продукция</picture>
+  </picture>
+  <content>CommonForm.ФормаСпискаОстаткиПродукции</content>
+</mdclass:Subsystem>

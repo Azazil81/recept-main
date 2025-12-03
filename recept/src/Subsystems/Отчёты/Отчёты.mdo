@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2f03940c-5f5f-4e2f-949b-534730b03049">
+  <name>Отчёты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчёты</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Отчеты</picture>
+  </picture>
+  <content>CommonPicture.Отчеты</content>
+  <content>Report.СравнениеРецептур</content>
+  <content>Report.ОстаткиМатериалов</content>
+  <content>Report.Материалы</content>
+  <content>Report.МинимальныйЗапас</content>
+  <content>Report.ПотребностьПоНоменклатуре</content>
+  <content>Document.ПервоначальныеОстатки</content>
+  <content>Document.КоррекцияЦены</content>
+  <content>Document.ДокументПродажи</content>
+  <content>Document.СпиасниеВПроизводство</content>
+  <content>Document.ВыпускПродукции</content>
+  <content>Report.Заявки</content>
+  <content>Report.ОстаткиСырьяПоГруппам</content>
+  <content>Report.ПотребностьПоПроизводству</content>
+  <content>Report.РеализацияСырья</content>
+  <content>Report.ОборотыПродукции</content>
+  <content>Report.АрбитражныеПробы</content>
+  <content>Report.КоличествоВыпускаПродукции</content>
+  <content>Report.ТекущиеОстатки</content>
+  <content>Report.ПродажиПоМесяцам</content>
+</mdclass:Subsystem>

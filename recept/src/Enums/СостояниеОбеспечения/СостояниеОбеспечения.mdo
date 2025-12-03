@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="df49dd0d-1305-47d4-b75b-55fdf4292eb8">
+  <producedTypes>
+    <refType typeId="699dd878-7144-4de8-b58e-1577aaaa9da8" valueTypeId="de94b222-2140-48a5-be60-ca00eb968325"/>
+    <listType typeId="af973f8f-dd40-4da4-a570-37bf4ff70e34" valueTypeId="9860c3ba-b4e2-441c-9880-f19a2242cf59"/>
+    <managerType typeId="1872bcc0-5ba7-4a7a-8bd4-6d2c9497b279" valueTypeId="4eac6955-b0c1-4fdd-91e4-4a5eb820a29f"/>
+  </producedTypes>
+  <name>СостояниеОбеспечения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояние обеспечения</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ea9af9a8-4e18-483e-9b8e-6c2bce419822">
+    <name>КОбеспечению</name>
+    <synonym>
+      <key>ru</key>
+      <value>К обеспечению</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="eca0d172-89fa-4eec-9730-14fb9b14c28d">
+    <name>Отгрузить</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отгрузить</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d964eb1f-b56a-480e-82b8-82d39123d67e">
+    <name>Отгружен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отгружен</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

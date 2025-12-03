@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConditionalAppearance xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+	<item>
+		<selection>
+			<item>
+				<field>РецептураСоставНомерСтроки</field>
+			</item>
+			<item>
+				<field>РецептураСоставМатериал</field>
+			</item>
+			<item>
+				<field>РецептураСоставКоличествоНаТонну</field>
+			</item>
+			<item>
+				<field>РецептураСоставМатериалЕдиницаИзмеренияСырья</field>
+			</item>
+			<item>
+				<field>РецептураСоставТребуетсяДляПроизводства</field>
+			</item>
+			<item>
+				<field>РецептураСоставЕдиницаИзмеренияЗагрузки</field>
+			</item>
+			<item>
+				<field>РецептураСоставОстаток</field>
+			</item>
+			<item>
+				<field>РецептураСоставЕдиницаИзмеренияЗагрузки1</field>
+			</item>
+			<item>
+				<field>РецептураСоставЦена</field>
+			</item>
+			<item>
+				<field>РецептураСоставСумма</field>
+			</item>
+			<item>
+				<field>РецептураСоставДействие</field>
+			</item>
+			<item>
+				<field>РецептураСоставВПроизводстве</field>
+			</item>
+			<item>
+				<field>РецептураСоставМатериалПримечание</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.РецептураСостав.ЕдиницаИзмеренияЗагрузки</left>
+				<comparisonType>Contains</comparisonType>
+				<right xsi:type="xs:string">-</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#FFCC99</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>РецептураСоставВПроизводстве</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.РецептураСостав.ВПроизводстве</left>
+				<comparisonType>Greater</comparisonType>
+				<right xsi:type="dcscor:Field">Объект.РецептураСостав.ТребуетсяДляПроизводства</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>РецептураСоставДействие</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.РецептураСостав.Действие</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Перечисление.СостояниеОбеспечения.Отгружен</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#C0C0C0</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>РецептураСоставНомерСтроки</field>
+			</item>
+			<item>
+				<field>РецептураСоставМатериал</field>
+			</item>
+			<item>
+				<field>РецептураСоставМатериалЕдиницаИзмеренияСырья</field>
+			</item>
+			<item>
+				<field>РецептураСоставТребуетсяДляПроизводства</field>
+			</item>
+			<item>
+				<field>РецептураСоставЕдиницаИзмеренияЗагрузки</field>
+			</item>
+			<item>
+				<field>РецептураСоставОстаток</field>
+			</item>
+			<item>
+				<field>РецептураСоставЕдиницаИзмеренияЗагрузки1</field>
+			</item>
+			<item>
+				<field>РецептураСоставДействие</field>
+			</item>
+			<item>
+				<field>РецептураСоставДействие</field>
+			</item>
+			<item>
+				<field>РецептураСоставВПроизводстве</field>
+			</item>
+			<item>
+				<field>РецептураСоставПотребность</field>
+			</item>
+			<item>
+				<field>РецептураСоставЦена</field>
+			</item>
+			<item>
+				<field>РецептураСоставСумма</field>
+			</item>
+			<item>
+				<field>РецептураСоставМатериалПримечание</field>
+			</item>
+			<item>
+				<field>РецептураСоставКоличествоНаТонну</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.РецептураСостав.ТребуетсяДляПроизводства</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:Field">Объект.РецептураСостав.ВПроизводстве</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#C0C0C0</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>РецептураСоставНомерСтроки</field>
+			</item>
+			<item>
+				<field>РецептураСоставМатериал</field>
+			</item>
+			<item>
+				<field>РецептураСоставКоличествоНаТонну</field>
+			</item>
+			<item>
+				<field>РецептураСоставМатериалЕдиницаИзмеренияСырья</field>
+			</item>
+			<item>
+				<field>РецептураСоставТребуетсяДляПроизводства</field>
+			</item>
+			<item>
+				<field>РецептураСоставЕдиницаИзмеренияЗагрузки</field>
+			</item>
+			<item>
+				<field>РецептураСоставОстаток</field>
+			</item>
+			<item>
+				<field>РецептураСоставЕдиницаИзмеренияЗагрузки1</field>
+			</item>
+			<item>
+				<field>РецептураСоставДействие</field>
+			</item>
+			<item>
+				<field>РецептураСоставВПроизводстве</field>
+			</item>
+			<item>
+				<field>РецептураСоставПотребность</field>
+			</item>
+			<item>
+				<field>РецептураСоставЦена</field>
+			</item>
+			<item>
+				<field>РецептураСоставСумма</field>
+			</item>
+			<item>
+				<field>РецептураСоставМатериалПримечание</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.РецептураСостав.ТребуетсяДляПроизводства</left>
+				<comparisonType>Less</comparisonType>
+				<right xsi:type="dcscor:Field">Объект.РецептураСостав.ВПроизводстве</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>СтатусЗагрузки</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.СтатусЗагрузки</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Перечисление.СостояниеЗагрузкиСырьяПроизводства.НетОбеспечения</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#000000</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>СтатусЗагрузки</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.СтатусЗагрузки</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Перечисление.СостояниеЗагрузкиСырьяПроизводства.Обеспечено</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#339966</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>СтатусЗагрузки</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.СтатусЗагрузки</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Перечисление.СостояниеЗагрузкиСырьяПроизводства.ЧастичноОбеспечено</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>СтатусЗагрузки</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.СтатусЗагрузки</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Перечисление.СостояниеЗагрузкиСырьяПроизводства.Перегруз</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>СтатусВыпуска</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.СтатусВыпуска</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Перечисление.СостояниеВыпускаПродукции.НетВыпуска</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#000000</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>СтатусВыпуска</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.СтатусВыпуска</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Перечисление.СостояниеВыпускаПродукции.ЧастичноВыпущена</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>СтатусВыпуска</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.СтатусВыпуска</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Перечисление.СостояниеВыпускаПродукции.Выпущена</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#339966</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+</ConditionalAppearance>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="90d59fc5-2a2a-4a3e-a5f1-8bc9ff568e68">
+  <producedTypes>
+    <refType typeId="290c73d5-c148-4e67-870b-0ba837c74b6a" valueTypeId="22c78a02-3a73-42b4-a185-d8de78644f9a"/>
+    <listType typeId="1bb250a0-3b90-48c8-8909-1d2bf28cf0b5" valueTypeId="a22d182c-5697-4bcc-bd1e-fd229e6586b8"/>
+    <managerType typeId="6d852275-82a5-4533-bad3-17489fc604ed" valueTypeId="fa2c9820-312f-44ed-8d47-ac1cc5e62790"/>
+  </producedTypes>
+  <name>ВозрастКлиента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Возраст клиента</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="5cf6a0fe-75e6-4525-9640-111b11333229">
+    <name>Новый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новый</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5a50bda6-b6ad-400c-b0f1-75c3e32efc22">
+    <name>Старый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Старый</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

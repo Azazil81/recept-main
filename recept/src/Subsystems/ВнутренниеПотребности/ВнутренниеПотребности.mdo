@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3154f16f-047e-4809-9929-699052fb2517">
+  <name>ВнутренниеПотребности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Внутренние потребности</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <useOneCommand>true</useOneCommand>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ВнутреннееПотрбление</picture>
+  </picture>
+  <content>Document.СписаниеНаВнутренниеПотребности</content>
+</mdclass:Subsystem>

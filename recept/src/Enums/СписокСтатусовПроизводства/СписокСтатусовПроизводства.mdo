@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2a1ebae8-2227-48e7-bdee-09effb318c06">
+  <producedTypes>
+    <refType typeId="e31e0e96-8527-4547-b753-6b1b2ebebe66" valueTypeId="2dad870c-c72f-40b2-bdc4-530edbdd2c73"/>
+    <listType typeId="2411afc1-f75e-42db-9bee-451531ac8cb3" valueTypeId="1ca1b5be-4ab4-4efb-b78b-97a6a655bcaf"/>
+    <managerType typeId="6c4513aa-1b52-455c-afc6-5181d2fb45c4" valueTypeId="089388ae-fdd7-486d-84e8-a31c4195ca7c"/>
+  </producedTypes>
+  <name>СписокСтатусовПроизводства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Список статусов производства</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="6e4aa330-a240-485a-8f28-a2b705d3e33c">
+    <name>Заявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c1de6fde-88ab-402a-a879-d6cf7a04761e">
+    <name>ОжиданиеСырья</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ожидание сырья</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8bbd364c-627d-4207-b846-fa64c388852b">
+    <name>Производство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Производство</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b095747a-7a37-4337-ab74-dfa99c37e880">
+    <name>ВыпускПродукции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выпуск продукции</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ef2139a4-14f1-4539-a933-f4abd2c4ec2a">
+    <name>Закрыто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закрыто</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

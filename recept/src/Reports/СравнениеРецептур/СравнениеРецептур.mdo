@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="786a0ef3-3b7a-4bd7-ba65-ea81d2dfd799">
+  <producedTypes>
+    <objectType typeId="3b67cfdf-378a-4417-a01e-941aef0f5b37" valueTypeId="55d6a5a6-213c-493d-b61f-21920552bcef"/>
+    <managerType typeId="544fe32d-99a0-446b-92cf-2f525fc169ea" valueTypeId="b1821576-aef8-45d2-b25d-f1fa46b39a1a"/>
+  </producedTypes>
+  <name>СравнениеРецептур</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сравнение рецептур</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.СравнениеРецептур.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="d8bc378f-3f72-4c96-a385-4db4795fd42d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d5e9a945-438f-4e75-9a8c-703c353c2993">
+  <name>Заявки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заявки</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <useOneCommand>true</useOneCommand>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ОбщаяКартинка7</picture>
+  </picture>
+  <content>CommonForm.ФормаСпискаЗаявок</content>
+</mdclass:Subsystem>

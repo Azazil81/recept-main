@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="54939f96-1926-497e-96e6-bb0c95236ea8">
+  <producedTypes>
+    <objectType typeId="2938b927-7012-4062-96c8-d567d34e76a4" valueTypeId="ca176b9b-33b0-40ff-8f11-c04a465e8b6f"/>
+    <managerType typeId="157e4623-6da3-4786-a09d-623944cb4d58" valueTypeId="21994aa6-35e7-423a-a59b-99b2dd322bba"/>
+  </producedTypes>
+  <name>ОстаткиСырьяПоГруппам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки сырья по группам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ОстаткиСырьяПоГруппам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="3fe1185e-4402-4e2e-9f84-ba879fa09d5e">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

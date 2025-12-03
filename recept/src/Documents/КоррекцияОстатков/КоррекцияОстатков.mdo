@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0ce238c8-04fe-4f35-8356-81e369ac9ed9">
+  <producedTypes>
+    <objectType typeId="df1e2c6c-37e5-418a-b0fc-13de0a6cb4e1" valueTypeId="d29aa247-88bf-4240-b0ef-2826891959ad"/>
+    <refType typeId="d540a579-722c-457e-9d63-dcac4fdc055f" valueTypeId="7eba4029-0170-444f-9a03-7073834fee2a"/>
+    <selectionType typeId="c0714178-1979-4d40-a0a4-7e8320bc9d39" valueTypeId="d1f4d922-ff42-40db-9678-07c330dc55a5"/>
+    <listType typeId="7fe93e81-0a89-4d30-ad80-b07cb9fa8722" valueTypeId="3ba1bb63-808b-488e-8a71-6b745edf0f6d"/>
+    <managerType typeId="67d84a52-d121-4bf9-9ba1-920ea4964d44" valueTypeId="87cde14b-2433-473b-860f-0ec8bd5e932c"/>
+  </producedTypes>
+  <name>КоррекцияОстатков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Инвентаризация</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.КоррекцияОстатков.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.КоррекцияОстатков.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>AccumulationRegister.ОстаткиМатериалов</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <forms uuid="5a551a60-e2ff-40b5-9f24-c883b6656c87">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5d447129-0a6c-4aea-9173-7badc8b370d1">
+    <name>ФормаЗагрузкиТаблицыИзExcel</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма загрузки таблицы из excel</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="117102c0-8f2d-4454-a914-6c258eb9f3d8">
+    <producedTypes>
+      <objectType typeId="77d57321-023c-4d1e-a3eb-e0d77ad7ca1f" valueTypeId="f9c272a1-e5f2-48c5-96bb-a0924bc8f37c"/>
+      <rowType typeId="933d7af9-dd02-4daa-b93a-c0be3fa2323c" valueTypeId="3c637391-0bcd-4caf-97fb-8336cf26b80b"/>
+    </producedTypes>
+    <name>Материалы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Материалы</value>
+    </synonym>
+    <attributes uuid="69db80a7-07cf-4ee1-a75b-e8d99d7ede95">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.НоменклатураМатериалы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="eae697f0-83ef-4b85-8883-63ca63eca88a">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6e5ba2a0-f7f5-42a5-be00-2bf3e10a9767">
+      <name>Остаток</name>
+      <synonym>
+        <key>ru</key>
+        <value>Остаток</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="de5d9f77-d93b-4837-ab0f-03b61884a67b">
+      <name>Коррекция</name>
+      <synonym>
+        <key>ru</key>
+        <value>Коррекция</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

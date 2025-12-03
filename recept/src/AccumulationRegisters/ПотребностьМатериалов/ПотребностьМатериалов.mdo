@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fa58e22a-009e-480a-b361-660284dbe5a8">
+  <producedTypes>
+    <selectionType typeId="9b646148-615a-436a-a458-4e13a27df3c3" valueTypeId="b5d22525-c556-47f6-8e1b-f0589138058b"/>
+    <listType typeId="10be40e4-18fd-4c86-a5b6-56a6150848f4" valueTypeId="37dfecb6-c5fd-4063-8e6d-b047ccfddfca"/>
+    <managerType typeId="84740bb0-90fe-4b10-8c3c-d4687e61d966" valueTypeId="48cfe53a-5a37-4d81-a5cb-21c6c7c38b47"/>
+    <recordSetType typeId="7c8b4eeb-3c43-4cc9-9f81-af395160e789" valueTypeId="41df2a72-1a78-4154-be5f-675fa9a71f6e"/>
+    <recordKeyType typeId="fbd0a9dd-659b-44cd-a23e-2e02ed64ac4d" valueTypeId="0000c79c-f1fb-4a7d-871d-a50275f77d60"/>
+    <recordType typeId="e55ef0c6-115b-410f-b727-4c2505932b1a" valueTypeId="d308d718-d319-43d3-924b-4d34bb150fd2"/>
+  </producedTypes>
+  <name>ПотребностьМатериалов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Потребность материалов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="8cf0e0f6-67cb-4c69-ae26-48684e6f47aa">
+    <name>Потребность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Потребность</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="2b86db26-65f5-4044-b67d-fe440f7f4eed">
+    <name>Наименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НоменклатураМатериалы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="77405242-a072-4680-a624-343b3ff19f9d">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

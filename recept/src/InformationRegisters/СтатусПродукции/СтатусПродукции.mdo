@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7716bb79-684f-472b-8aa5-d9d3565b37b2">
+  <producedTypes>
+    <selectionType typeId="d6b37ec9-496a-4065-89c4-737dcf8c0b7a" valueTypeId="76183ce1-94a4-42a0-858b-754c06cadeb9"/>
+    <listType typeId="411cf4b5-cf13-4bb7-84ba-60388c8d5c0d" valueTypeId="68253aa5-25e5-4236-a9f4-caff0a2c3cbd"/>
+    <managerType typeId="9ca15fa8-899b-4342-8433-d2f09c4e2d60" valueTypeId="fe1587b0-9bae-4d40-a002-6f86a2d3bc03"/>
+    <recordSetType typeId="f4d26683-098e-4952-8c43-c3c48268da8b" valueTypeId="9629a37b-9a72-4ed0-abde-d3bfb51e46c6"/>
+    <recordKeyType typeId="5c5d652a-be3a-44a0-8e5d-fa2d0e4a1bfe" valueTypeId="dd014186-88a9-43bb-9eb1-70557957ab9d"/>
+    <recordType typeId="190ec637-03e5-48fc-bc6e-27a267b06b47" valueTypeId="ef96cbaf-0130-442c-afb3-d4f88c8fc9d7"/>
+    <recordManagerType typeId="e38d7195-810e-4eec-8e38-0d969c9ab296" valueTypeId="79edd770-368f-48fc-ae13-23b6cab5451f"/>
+  </producedTypes>
+  <name>СтатусПродукции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статус продукции</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c064e399-20d2-4bfd-bde8-852dc894a28d">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыГотовностиПродукции</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="045861af-22cd-4276-9dca-98dc85da674d">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НоменклатураМатериалы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

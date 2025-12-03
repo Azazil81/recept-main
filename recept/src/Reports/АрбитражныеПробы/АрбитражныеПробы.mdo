@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7fda4efc-e5a2-4c0b-b747-5d252e4736b2">
+  <producedTypes>
+    <objectType typeId="d30a1ce4-4298-40da-b858-b5c85f68a900" valueTypeId="a14c16b6-6f20-4e9c-a398-5c0794f1c961"/>
+    <managerType typeId="588018ff-1bb6-4676-b435-a07637197d7f" valueTypeId="55c3b0dc-6a03-4c18-b61b-a247fae23fdc"/>
+  </producedTypes>
+  <name>АрбитражныеПробы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Арбитражные пробы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.АрбитражныеПробы.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="849898fb-6c81-4add-a7c2-21585deb4184">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

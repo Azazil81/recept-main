@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8268ab44-8d2e-4470-8ed3-f36c10260f72">
+  <name>Рецептуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рецептуры</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <useOneCommand>true</useOneCommand>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Рецептуры</picture>
+  </picture>
+  <content>Document.Рецепт</content>
+</mdclass:Subsystem>

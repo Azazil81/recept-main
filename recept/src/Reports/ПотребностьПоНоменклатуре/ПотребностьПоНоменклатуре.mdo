@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="19060204-cf04-4239-be56-ecf049365d9d">
+  <producedTypes>
+    <objectType typeId="6ba2ecaf-60c9-4d46-b81f-606d40c61b85" valueTypeId="9288fc61-6987-40e0-bda6-049114dbefa9"/>
+    <managerType typeId="3c48cec9-f987-407b-8d18-9385f2e6947d" valueTypeId="e2f4f496-a522-4021-a68a-4f410ed0eef1"/>
+  </producedTypes>
+  <name>ПотребностьПоНоменклатуре</name>
+  <synonym>
+    <key>ru</key>
+    <value>Потребность по документам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ПотребностьПоНоменклатуре.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="57f17809-5f47-4e9a-9487-7c3e254d210f">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

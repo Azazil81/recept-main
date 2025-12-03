@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="95476648-d8e3-4169-84ed-1cf3578eb0ac">
+  <producedTypes>
+    <objectType typeId="8408ad87-babc-44a7-bc22-2040371550e9" valueTypeId="296a983c-a48b-45ea-a4c2-a7b3c0a56f1a"/>
+    <managerType typeId="944cca79-4d6f-4173-ab9d-0f56bb1b8e7c" valueTypeId="41341def-4a96-48f1-b284-b1baf677e22e"/>
+  </producedTypes>
+  <name>ОборотыПродукции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Продажи по менеджерам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ОборотыПродукции.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ОборотыПродукции.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <attributes uuid="2f84efa4-b29a-4c1d-9252-ed5bd6ad148d">
+    <name>СвернутьНакладные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Свернуть накладные</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="5273b4db-e13a-495d-a7a7-c420f49c197e">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="2de5dd2d-c562-4736-85cc-357680788a90">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

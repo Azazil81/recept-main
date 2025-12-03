@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="53cc680c-8fa6-4be8-9209-fb9dd8c55588">
+  <producedTypes>
+    <refType typeId="9b38c38a-e20b-41bd-a6be-175979445d69" valueTypeId="fa389e20-d293-43e7-9e8b-2dd4a92ed3bd"/>
+    <listType typeId="f6d809d5-688a-43ba-b10b-04367e876cbb" valueTypeId="277789c2-c5cf-40c1-a4da-71ba66341351"/>
+    <managerType typeId="e7282092-ff36-4bee-bdb2-275ccb3a4763" valueTypeId="08fc2fad-64dc-4ad3-b9e6-8a195a4138dd"/>
+  </producedTypes>
+  <name>СостояниеУчастияВТендере</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояние участия в тендере</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="0485c429-08db-40b8-8a9b-1a87f4c34036">
+    <name>НаСогласовании</name>
+    <synonym>
+      <key>ru</key>
+      <value>На согласовании</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="03f636f2-e540-4294-b621-685a82682a9e">
+    <name>ВРаботе</name>
+    <synonym>
+      <key>ru</key>
+      <value>В работе</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7f15e26b-0399-4ef5-b55f-faeed34216af">
+    <name>Закрыт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закрыт</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

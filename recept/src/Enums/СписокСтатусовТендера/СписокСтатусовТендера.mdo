@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f17e0b64-b8de-402d-9e99-376dd6ea6aad">
+  <producedTypes>
+    <refType typeId="0c2a8d6d-2f52-4d56-8372-3344dfd1ca19" valueTypeId="4a3cec71-951b-4bc7-90b2-794e25d4352d"/>
+    <listType typeId="d11ecea7-b88c-4246-ad89-c34619590831" valueTypeId="f431f763-bf3c-4b8d-b208-65218165ebe9"/>
+    <managerType typeId="a4e997f4-679f-44c1-a4b6-7c4f8826f2b6" valueTypeId="d000f2cc-5633-44c3-8596-01d1edf2fffe"/>
+  </producedTypes>
+  <name>СписокСтатусовТендера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Список статусов тендера</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="5371de98-a39b-41a8-86a7-0a1f09db3bde">
+    <name>Заявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b69b5dfb-b9be-4d83-ac29-6a5b60300821">
+    <name>Участие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Участие</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="cfd827d5-91c9-497c-90c5-bd8da3aa8d41">
+    <name>ДоговорПодписан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор подписан</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c4b46671-649a-48bf-8027-a8ef91be6daa">
+    <name>Отказ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отказ</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

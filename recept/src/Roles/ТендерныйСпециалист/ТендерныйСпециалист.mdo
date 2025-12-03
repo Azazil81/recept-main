@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4d29a893-b39d-4077-a26e-aa32d3ac2778">
+  <name>ТендерныйСпециалист</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тендерный специалист</value>
+  </synonym>
+</mdclass:Role>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ec128261-6167-4ced-b7d4-045e9cdf55af">
+  <producedTypes>
+    <selectionType typeId="a961da19-7c4f-48b1-a93d-90ae6a570c13" valueTypeId="8e0c3064-0266-470e-af72-f04b170e9961"/>
+    <listType typeId="900e339d-6b56-4ed8-8094-9d703450304c" valueTypeId="1a2a9f2a-a9cb-41ba-acbd-b45d0822783d"/>
+    <managerType typeId="0db73379-2bfe-4cc1-ab85-816b64f072dc" valueTypeId="b35c21d0-120a-4cc9-a980-460e4f597e68"/>
+    <recordSetType typeId="4c59f43f-0348-434a-96bf-836ca015c91f" valueTypeId="1d0a28c3-7233-4db7-b5e7-5decb74f32dc"/>
+    <recordKeyType typeId="c22442fa-9343-4a25-8b91-3397b9afee89" valueTypeId="30164584-9a18-44b8-9850-216892b0bb45"/>
+    <recordType typeId="ab0be7cf-6c1a-4aa8-9de3-9accd3255fa3" valueTypeId="8181273b-23c6-4466-a4e7-b7da3a8c95cf"/>
+    <recordManagerType typeId="bf335405-e83a-4d92-87b9-718a9702caa5" valueTypeId="a9d43aad-ab8c-48dd-a1b6-732cad0cd7c5"/>
+  </producedTypes>
+  <name>ЦенаПокупки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цена покупки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="0b6eac9b-6014-4c23-b705-87bbb4d42867">
+    <name>Цена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="e03f120c-bad2-4ed5-ab0c-8dab0d8ec78f">
+    <name>Наиенование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наиенование</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НоменклатураМатериалы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

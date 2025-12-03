@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="34e6f6c3-7a5a-4d1a-bde7-6cb7e5d87547">
+  <producedTypes>
+    <objectType typeId="8b3653b2-e8e1-4b2d-8cd2-52d3ce75e470" valueTypeId="eedd1ba8-ccda-4c2e-bd07-3b52846e39bf"/>
+    <refType typeId="6861b957-5ac9-4c62-834c-51e44e5e7b5a" valueTypeId="c2da6f5c-e10a-429f-9d59-e173e1013149"/>
+    <selectionType typeId="dfbb11c2-5970-48d6-ad3f-4bcade4b982b" valueTypeId="8b3d78ff-762e-4fd5-807a-6641b069b422"/>
+    <listType typeId="762d1eb5-b568-461a-9a44-52524dd0a4c2" valueTypeId="bf03e7a9-3368-43e9-bc9f-99e337170f38"/>
+    <managerType typeId="4b38f5a2-2bcf-4004-b3e5-42fa6b234169" valueTypeId="bd9ac347-a5f5-48cc-b6a0-5b94103e8840"/>
+  </producedTypes>
+  <name>Поставщики</name>
+  <synonym>
+    <key>ru</key>
+    <value>Поставщики</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Поставщики.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Поставщики.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Контрагент</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>12</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Поставщики.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.Поставщики.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="3a855a45-2f41-4b79-900f-925f51085c3d">
+    <name>Примечание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Примечание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="45b1c5d9-3c68-49c8-8ff4-6c6863685f9e">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2bcbf4c6-ba5c-41e1-abfa-d04859fcfdf3">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>
