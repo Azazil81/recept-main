@@ -134,19 +134,19 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>Номенклатура</name>
-      <id>23</id>
+      <name>НоменклатураСсылкаНаименование</name>
+      <id>59</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Заявки.Номенклатура</segments>
+        <segments>Заявки.НоменклатураСсылка.Description</segments>
       </dataPath>
       <extendedTooltip>
-        <name>НоменклатураРасширеннаяПодсказка</name>
-        <id>25</id>
+        <name>НоменклатураСсылкаНаименованиеРасширеннаяПодсказка</name>
+        <id>61</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -155,8 +155,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>НоменклатураКонтекстноеМеню</name>
-        <id>24</id>
+        <name>НоменклатураСсылкаНаименованиеКонтекстноеМеню</name>
+        <id>60</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
@@ -168,7 +168,6 @@
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
         <wrap>true</wrap>
-        <extendedEditMultipleValues>true</extendedEditMultipleValues>
         <chooseType>true</chooseType>
         <typeDomainEnabled>true</typeDomainEnabled>
         <textEdit>true</textEdit>
