@@ -10,15 +10,11 @@
   <picture xsi:type="core:PictureRef">
     <picture>CommonPicture.Администрирование</picture>
   </picture>
-  <content>Document.КоррекцияЦены</content>
   <content>AccumulationRegister.ВПроизводстве</content>
-  <content>Document.ПервоначальныеОстатки</content>
   <content>InformationRegister.ЦенаПокупки</content>
-  <content>Document.ВыпускПродукции</content>
   <content>Catalog.Пользователи</content>
   <content>AccumulationRegister.СтоимостьМатериалов</content>
   <content>InformationRegister.Рецепт</content>
-  <content>Document.ДокументПродажи</content>
   <content>AccumulationRegister.Продано</content>
   <content>Enum.ПриоритетЗаявки</content>
   <content>Enum.СтатусыЗаказаКлиента</content>
@@ -33,7 +29,6 @@
   <content>Catalog.Фасовка</content>
   <content>AccumulationRegister.СтоимостьПродажи</content>
   <content>Report.ДокументыСписанияСырьяВПроизводство</content>
-  <content>CommonForm.ФормаСпискаЗаявок</content>
   <content>Catalog.МестоХранения</content>
   <content>Report.РасшифровкаОборотовНоменклатуры</content>
   <content>InformationRegister.АрбитражнаяПроба</content>

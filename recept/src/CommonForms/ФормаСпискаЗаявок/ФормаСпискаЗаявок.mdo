@@ -5,6 +5,11 @@
     <key>ru</key>
     <value>Форма списка заявок</value>
   </synonym>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
   <usePurposes>PersonalComputer</usePurposes>
   <usePurposes>MobileDevice</usePurposes>
   <useStandardCommands>true</useStandardCommands>

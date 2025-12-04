@@ -25,4 +25,10 @@
   <content>Enum.СтатусыАрбитражнойПробы</content>
   <content>Document.АрбитражнаяПроба</content>
   <content>CommonForm.ФормаСпискаСырья</content>
+  <content>CommonForm.ФормаСпискаОстаткиПродукции</content>
+  <content>CommonForm.ФормаСпискаЗаявок</content>
+  <content>Document.КоррекцияЦены</content>
+  <content>Document.ВыпускПродукции</content>
+  <content>Document.ДокументПродажи</content>
+  <content>Document.ПервоначальныеОстатки</content>
 </mdclass:Subsystem>
