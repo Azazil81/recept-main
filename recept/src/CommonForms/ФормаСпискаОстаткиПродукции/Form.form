@@ -29,7 +29,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Продукция.Ссылка.Code</segments>
+        <segments>Продукция.Ссылка.Код</segments>
       </dataPath>
       <extendedTooltip>
         <name>СсылкаКодРасширеннаяПодсказка</name>
@@ -65,7 +65,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Продукция.Ссылка.Description</segments>
+        <segments>Продукция.Ссылка.Наименование</segments>
       </dataPath>
       <extendedTooltip>
         <name>СсылкаНаименованиеРасширеннаяПодсказка</name>
@@ -97,19 +97,19 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>Цвет</name>
-      <id>35</id>
+      <name>СсылкаЦвет</name>
+      <id>107</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Продукция.Цвет</segments>
+        <segments>Продукция.Ссылка.Цвет</segments>
       </dataPath>
       <extendedTooltip>
-        <name>ЦветРасширеннаяПодсказка</name>
-        <id>37</id>
+        <name>СсылкаЦветРасширеннаяПодсказка</name>
+        <id>109</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -118,34 +118,38 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ЦветКонтекстноеМеню</name>
-        <id>36</id>
+        <name>СсылкаЦветКонтекстноеМеню</name>
+        <id>108</id>
         <autoFill>true</autoFill>
       </contextMenu>
-      <type>LabelField</type>
+      <type>InputField</type>
       <editMode>Enter</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:LabelFieldExtInfo">
+      <extInfo xsi:type="form:InputFieldExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>RAL</name>
-      <id>14</id>
+      <name>СсылкаRAL</name>
+      <id>101</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Продукция.RAL</segments>
+        <segments>Продукция.Ссылка.RAL</segments>
       </dataPath>
       <extendedTooltip>
-        <name>RALРасширеннаяПодсказка</name>
-        <id>16</id>
+        <name>СсылкаRALРасширеннаяПодсказка</name>
+        <id>103</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -154,34 +158,38 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>RALКонтекстноеМеню</name>
-        <id>15</id>
+        <name>СсылкаRALКонтекстноеМеню</name>
+        <id>102</id>
         <autoFill>true</autoFill>
       </contextMenu>
-      <type>LabelField</type>
+      <type>InputField</type>
       <editMode>Enter</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:LabelFieldExtInfo">
+      <extInfo xsi:type="form:InputFieldExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>Фасовка</name>
-      <id>32</id>
+      <name>СсылкаФасовка</name>
+      <id>104</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Продукция.Фасовка</segments>
+        <segments>Продукция.Ссылка.Фасовка</segments>
       </dataPath>
       <extendedTooltip>
-        <name>ФасовкаРасширеннаяПодсказка</name>
-        <id>34</id>
+        <name>СсылкаФасовкаРасширеннаяПодсказка</name>
+        <id>106</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -190,18 +198,22 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ФасовкаКонтекстноеМеню</name>
-        <id>33</id>
+        <name>СсылкаФасовкаКонтекстноеМеню</name>
+        <id>105</id>
         <autoFill>true</autoFill>
       </contextMenu>
-      <type>LabelField</type>
+      <type>InputField</type>
       <editMode>Enter</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:LabelFieldExtInfo">
+      <extInfo xsi:type="form:InputFieldExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
@@ -635,19 +647,19 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>Примечание</name>
-      <id>23</id>
+      <name>СсылкаПримечание</name>
+      <id>110</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Продукция.Примечание</segments>
+        <segments>Продукция.Ссылка.Примечание</segments>
       </dataPath>
       <extendedTooltip>
-        <name>ПримечаниеРасширеннаяПодсказка</name>
-        <id>25</id>
+        <name>СсылкаПримечаниеРасширеннаяПодсказка</name>
+        <id>112</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -656,18 +668,22 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ПримечаниеКонтекстноеМеню</name>
-        <id>24</id>
+        <name>СсылкаПримечаниеКонтекстноеМеню</name>
+        <id>111</id>
         <autoFill>true</autoFill>
       </contextMenu>
-      <type>LabelField</type>
+      <type>InputField</type>
       <editMode>Enter</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:LabelFieldExtInfo">
+      <extInfo xsi:type="form:InputFieldExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
       </extInfo>
     </items>
     <autoCommandBar>
@@ -840,10 +856,6 @@
     <extInfo xsi:type="form:DynamicListExtInfo">
       <queryText>ВЫБРАТЬ
 	НоменклатураМатериалы.Наименование КАК Наименование,
-	НоменклатураМатериалы.Цвет КАК Цвет,
-	НоменклатураМатериалы.RAL КАК RAL,
-	НоменклатураМатериалы.Фасовка КАК Фасовка,
-	НоменклатураМатериалы.Примечание КАК Примечание,
 	ОстаткиМатериаловОстатки.ОстатокОстаток КАК ОстатокОстаток,
 	ПотребностьМатериаловОстатки.ПотребностьОстаток КАК ПотребностьОстаток,
 	ЦеныМатериаловСрезПоследних.Цена КАК Цена,
@@ -861,7 +873,8 @@
 		ПО НоменклатураМатериалы.Ссылка = ЦеныМатериаловСрезПоследних.Номенклатура
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СтатусПродукции.СрезПоследних КАК СтатусПродукцииСрезПоследних
 		ПО НоменклатураМатериалы.Ссылка = СтатусПродукцииСрезПоследних.Номенклатура
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СведенияВПродукцииИзСчетов.СрезПоследних КАК СведенияВПродукцииИзСчетовСрезПоследних
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СведенияВПродукцииИзСчетов.СрезПоследних КАК
+			СведенияВПродукцииИзСчетовСрезПоследних
 		ПО НоменклатураМатериалы.Ссылка = СведенияВПродукцииИзСчетовСрезПоследних.Номенклатура
 ГДЕ
 	НоменклатураМатериалы.ТипНоменклатуры = &amp;ТипНоменклатуры
@@ -876,22 +889,6 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Наименование</dataPath>
         <field>Наименование</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>RAL</dataPath>
-        <field>RAL</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Цвет</dataPath>
-        <field>Цвет</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Фасовка</dataPath>
-        <field>Фасовка</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Примечание</dataPath>
-        <field>Примечание</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ОстатокОстаток</dataPath>
@@ -916,50 +913,6 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Статус</dataPath>
         <field>Статус</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>МинимальныйОстаток</dataPath>
-        <field>МинимальныйОстаток</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ЕдиницаИзмеренияСырья</dataPath>
-        <field>ЕдиницаИзмеренияСырья</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Код</dataPath>
-        <field>Код</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ТипНоменклатуры</dataPath>
-        <field>ТипНоменклатуры</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>МестоХранения</dataPath>
-        <field>МестоХранения</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Предопределенный</dataPath>
-        <field>Предопределенный</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ИмяПредопределенныхДанных</dataPath>
-        <field>ИмяПредопределенныхДанных</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ПометкаУдаления</dataPath>
-        <field>ПометкаУдаления</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Родитель</dataPath>
-        <field>Родитель</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ЭтоГруппа</dataPath>
-        <field>ЭтоГруппа</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Ссылка</dataPath>
-        <field>Ссылка</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Регистратор</dataPath>
@@ -988,6 +941,78 @@
             </content>
           </localValue>
         </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Код</dataPath>
+        <field>Код</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЕдиницаИзмеренияСырья</dataPath>
+        <field>ЕдиницаИзмеренияСырья</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>МинимальныйОстаток</dataPath>
+        <field>МинимальныйОстаток</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ТипНоменклатуры</dataPath>
+        <field>ТипНоменклатуры</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Цвет</dataPath>
+        <field>Цвет</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>RAL</dataPath>
+        <field>RAL</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Фасовка</dataPath>
+        <field>Фасовка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Примечание</dataPath>
+        <field>Примечание</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>МестоХранения</dataPath>
+        <field>МестоХранения</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Вязкость</dataPath>
+        <field>Вязкость</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Перетир</dataPath>
+        <field>Перетир</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВходнойКонтроль</dataPath>
+        <field>ВходнойКонтроль</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Предопределенный</dataPath>
+        <field>Предопределенный</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ИмяПредопределенныхДанных</dataPath>
+        <field>ИмяПредопределенныхДанных</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ПометкаУдаления</dataPath>
+        <field>ПометкаУдаления</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Родитель</dataPath>
+        <field>Родитель</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ЭтоГруппа</dataPath>
+        <field>ЭтоГруппа</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Ссылка</dataPath>
+        <field>Ссылка</field>
       </fields>
       <parameters>
         <name>ТипНоменклатуры</name>
