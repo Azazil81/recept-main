@@ -41,8 +41,18 @@
 			</title>
 			<appearance>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
 					<dcscor:value xsi:type="xs:decimal">10</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>МинимальнаяВысота</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">30</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">15</dcscor:value>
 				</dcscor:item>
 			</appearance>
 		</field>
@@ -57,8 +67,13 @@
 			</title>
 			<appearance>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
 					<dcscor:value xsi:type="xs:decimal">22</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">10</dcscor:value>
 				</dcscor:item>
 			</appearance>
 		</field>
@@ -76,6 +91,11 @@
 					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
 					<dcscor:value xsi:type="xs:decimal">16</dcscor:value>
 				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">5</dcscor:value>
+				</dcscor:item>
 			</appearance>
 		</field>
 		<field xsi:type="DataSetFieldField">
@@ -87,6 +107,18 @@
 					<v8:content>Номер</v8:content>
 				</v8:item>
 			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">5</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+				</dcscor:item>
+			</appearance>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Ответственный</dataPath>
@@ -97,6 +129,13 @@
 					<v8:content>Ответственный</v8:content>
 				</v8:item>
 			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">5</dcscor:value>
+				</dcscor:item>
+			</appearance>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Примечание</dataPath>
@@ -109,8 +148,13 @@
 			</title>
 			<appearance>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
 					<dcscor:value xsi:type="xs:decimal">35</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">15</dcscor:value>
 				</dcscor:item>
 			</appearance>
 		</field>
@@ -157,6 +201,22 @@
 				</dcscor:item>
 			</appearance>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Входной</dataPath>
+			<field>Входной</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Входной</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">5</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	СведенияВПродукцииИзСчетовСрезПоследних.Количество КАК Количество,
@@ -165,14 +225,16 @@
 	СтатусПродукцииСрезПоследних.Номенклатура.Номенклатура КАК ВидЛКМ,
 	СтатусПродукцииСрезПоследних.Регистратор.Контрагент КАК Покупатель,
 	СтатусПродукцииСрезПоследних.Регистратор.Номер КАК Номер,
-	СтатусПродукцииСрезПоследних.Регистратор.Ответственный КАК Ответственный,
 	СтатусПродукцииСрезПоследних.Номенклатура.Примечание КАК Примечание,
 	СтатусПродукцииСрезПоследних.Номенклатура.Цвет КАК Цвет,
 	СтатусПродукцииСрезПоследних.Номенклатура.RAL КАК RAL,
-	СтатусПродукцииСрезПоследних.Регистратор.ДатаНакладной КАК Дата
+	СтатусПродукцииСрезПоследних.Регистратор.ДатаНакладной КАК Дата,
+	СтатусПродукцииСрезПоследних.Номенклатура.ВходнойКонтроль КАК Входной,
+	СтатусПродукцииСрезПоследних.Регистратор.Ответственный.Код КАК Ответственный
 ИЗ
 	РегистрСведений.СтатусПродукции.СрезПоследних КАК СтатусПродукцииСрезПоследних
-		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СведенияВПродукцииИзСчетов.СрезПоследних КАК СведенияВПродукцииИзСчетовСрезПоследних
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СведенияВПродукцииИзСчетов.СрезПоследних КАК
+			СведенияВПродукцииИзСчетовСрезПоследних
 		ПО СтатусПродукцииСрезПоследних.Номенклатура = СведенияВПродукцииИзСчетовСрезПоследних.Номенклатура
 ГДЕ
 	СтатусПродукцииСрезПоследних.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыГотовностиПродукции.Заявка)</query>
@@ -188,8 +250,17 @@
 		</title>
 		<appearance>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
 				<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-				<dcscor:value xsi:type="xs:decimal">18</dcscor:value>
+				<dcscor:value xsi:type="xs:decimal">10</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МинимальнаяВысота</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">25</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">15</dcscor:value>
 			</dcscor:item>
 		</appearance>
 		<valueType>
@@ -202,7 +273,7 @@
 	</calculatedField>
 	<calculatedField>
 		<dataPath>ЦветЛКМ</dataPath>
-		<expression>СТРОКА(Цвет) + " RAL" + СТРОКА(RAL)</expression>
+		<expression>СТРОКА(Цвет)  + " " + СТРОКА(RAL)</expression>
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
@@ -211,8 +282,13 @@
 		</title>
 		<appearance>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
 				<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
 				<dcscor:value xsi:type="xs:decimal">20</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">15</dcscor:value>
 			</dcscor:item>
 		</appearance>
 	</calculatedField>
@@ -275,6 +351,15 @@
 					</dcsset:lwsTitle>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Входной</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вх.</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Примечание</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
@@ -284,6 +369,28 @@
 					<dcsset:orderType>Asc</dcsset:orderType>
 				</dcsset:item>
 			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Входной</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Входной</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:FormBackColor</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
 			<dcsset:outputParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>МакетОформления</dcscor:parameter>
