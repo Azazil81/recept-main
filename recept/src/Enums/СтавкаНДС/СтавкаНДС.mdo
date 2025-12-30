@@ -19,6 +19,20 @@
       <value>НДС 5%</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="f1a5724e-f281-44f8-9d19-80070153ef44">
+    <name>НДС10</name>
+    <synonym>
+      <key>ru</key>
+      <value>НДС10</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7a3f5380-f777-46ef-a4b4-2b46fdf3fdac">
+    <name>НДС18</name>
+    <synonym>
+      <key>ru</key>
+      <value>НДС18</value>
+    </synonym>
+  </enumValues>
   <enumValues uuid="d2b6b80e-6567-41ca-aca3-95c9a1553877">
     <name>НДС20</name>
     <synonym>
@@ -31,6 +45,13 @@
     <synonym>
       <key>ru</key>
       <value>НДС 22%</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="64d81ea9-1699-4564-b6df-648dc02fdaa0">
+    <name>БезНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Без НДС</value>
     </synonym>
   </enumValues>
 </mdclass:Enum>
