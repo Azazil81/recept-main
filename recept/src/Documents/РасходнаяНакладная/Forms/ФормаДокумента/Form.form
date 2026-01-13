@@ -919,6 +919,10 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.Товары.ЦенаПродажи</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>ТоварыЦенаПродажиПриИзменении</name>
+      </handlers>
       <extendedTooltip>
         <name>ТоварыЦенаПродажиРасширеннаяПодсказка</name>
         <id>40</id>
