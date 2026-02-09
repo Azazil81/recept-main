@@ -79,7 +79,6 @@
       <numberQualifiers>
         <precision>10</precision>
         <scale>2</scale>
-        <nonNegative>true</nonNegative>
       </numberQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
