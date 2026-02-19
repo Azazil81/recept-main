@@ -79,6 +79,7 @@
       <numberQualifiers>
         <precision>15</precision>
         <scale>2</scale>
+        <nonNegative>true</nonNegative>
       </numberQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
@@ -115,6 +116,7 @@
       <key>ru</key>
       <value>Материалы</value>
     </synonym>
+    <fillChecking>ShowError</fillChecking>
     <attributes uuid="14a82caa-9f05-4f77-a9fe-469761623427">
       <name>Номенклатура</name>
       <synonym>
@@ -126,6 +128,7 @@
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
