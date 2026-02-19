@@ -116,6 +116,7 @@
   <catalogs>Catalog.RAL</catalogs>
   <catalogs>Catalog.Фасовка</catalogs>
   <catalogs>Catalog.МестоХранения</catalogs>
+  <catalogs>Catalog.Склады</catalogs>
   <documents>Document.ПриходнаяНакладная</documents>
   <documents>Document.СпиасниеВПроизводство</documents>
   <documents>Document.Рецептуры</documents>
