@@ -79,7 +79,6 @@
       <numberQualifiers>
         <precision>15</precision>
         <scale>2</scale>
-        <nonNegative>true</nonNegative>
       </numberQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
@@ -116,7 +115,6 @@
       <key>ru</key>
       <value>Материалы</value>
     </synonym>
-    <fillChecking>ShowError</fillChecking>
     <attributes uuid="14a82caa-9f05-4f77-a9fe-469761623427">
       <name>Номенклатура</name>
       <synonym>
@@ -128,7 +126,6 @@
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
-      <fillChecking>ShowError</fillChecking>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
@@ -202,23 +199,6 @@
           <scale>2</scale>
           <nonNegative>true</nonNegative>
         </numberQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="cd0a25f6-b0c4-4da5-b6ce-5409fa818095">
-      <name>Партия</name>
-      <synonym>
-        <key>ru</key>
-        <value>Партия</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>100</length>
-        </stringQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
