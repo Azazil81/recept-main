@@ -41,6 +41,7 @@
     <dataPath xsi:type="form:DataPath">
       <segments>ТабДокумент</segments>
     </dataPath>
+    <titleLocation>None</titleLocation>
     <extendedTooltip>
       <name>ТабДокументРасширеннаяПодсказка</name>
       <id>5</id>

@@ -136,6 +136,31 @@
     <autoCommandBar>
       <name>РецептурыКоманднаяПанель</name>
       <id>2</id>
+      <items xsi:type="form:Button">
+        <name>Сравнить</name>
+        <id>23</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>СравнитьРасширеннаяПодсказка</name>
+          <id>24</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <commandName>Form.Command.Сравнить</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
       <horizontalAlign>Left</horizontalAlign>
       <autoFill>true</autoFill>
     </autoCommandBar>
@@ -159,7 +184,9 @@
       </contextMenu>
       <source>Рецептуры</source>
       <extInfo xsi:type="form:SearchStringAdditionExtInfo">
+        <width>150</width>
         <autoMaxWidth>true</autoMaxWidth>
+        <horizontalStretch>true</horizontalStretch>
       </extInfo>
     </searchStringAddition>
     <viewStatusAddition>
@@ -381,6 +408,18 @@
       </edit>
     </columns>
   </attributes>
+  <formCommands>
+    <name>Сравнить</name>
+    <title>
+      <key>ru</key>
+      <value>Сравнить</value>
+    </title>
+    <id>1</id>
+    <use>
+      <common>true</common>
+    </use>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
   <commandInterface>
     <navigationPanel/>
     <commandBar/>
