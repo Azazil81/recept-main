@@ -12,6 +12,14 @@
       <segments>СписокРецептур</segments>
     </dataPath>
     <titleLocation>None</titleLocation>
+    <excludedCommands>Add</excludedCommands>
+    <excludedCommands>MoveUp</excludedCommands>
+    <excludedCommands>MoveDown</excludedCommands>
+    <excludedCommands>CopyToClipboard</excludedCommands>
+    <excludedCommands>Delete</excludedCommands>
+    <excludedCommands>EndEdit</excludedCommands>
+    <excludedCommands>Change</excludedCommands>
+    <excludedCommands>Copy</excludedCommands>
     <items xsi:type="form:FormField">
       <name>РецептурыВыбор</name>
       <id>14</id>
