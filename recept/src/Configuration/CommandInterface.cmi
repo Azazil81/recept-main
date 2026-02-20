@@ -23,19 +23,40 @@
         </for>
       </visible>
     </visibilityFragments>
+    <visibilityFragments>
+      <subsystem>Subsystem.КонструкторРецептур</subsystem>
+      <visible>
+        <common>true</common>
+        <for>
+          <value>true</value>
+          <role>Role.Администратор</role>
+        </for>
+        <for>
+          <value>true</value>
+          <role>Role.Директор</role>
+        </for>
+        <for>
+          <role>Role.Закупщик</role>
+        </for>
+        <for>
+          <role>Role.Кладовщик</role>
+        </for>
+      </visible>
+    </visibilityFragments>
   </subsystemsVisibility>
   <subsystemsOrder>
+    <subsystems>Subsystem.КонструкторРецептур</subsystems>
     <subsystems>Subsystem.Материалы</subsystems>
     <subsystems>Subsystem.Покупки</subsystems>
     <subsystems>Subsystem.Рецептуры</subsystems>
-    <subsystems>Subsystem.Производство</subsystems>
-    <subsystems>Subsystem.ВнутренниеПотребности</subsystems>
     <subsystems>Subsystem.Продукция</subsystems>
-    <subsystems>Subsystem.ПеремещениеПоСкладу</subsystems>
-    <subsystems>Subsystem.Тендеры</subsystems>
+    <subsystems>Subsystem.ВнутренниеПотребности</subsystems>
+    <subsystems>Subsystem.Производство</subsystems>
     <subsystems>Subsystem.Продажи</subsystems>
     <subsystems>Subsystem.Отчёты</subsystems>
     <subsystems>Subsystem.Администрирование</subsystems>
+    <subsystems>Subsystem.ПеремещениеПоСкладу</subsystems>
     <subsystems>Subsystem.НСИ</subsystems>
+    <subsystems>Subsystem.Тендеры</subsystems>
   </subsystemsOrder>
 </cmi:CommandInterface>

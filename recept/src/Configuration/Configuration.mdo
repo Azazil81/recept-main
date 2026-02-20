@@ -57,6 +57,7 @@
   <subsystems>Subsystem.НСИ</subsystems>
   <subsystems>Subsystem.Заявки</subsystems>
   <subsystems>Subsystem.Тендеры</subsystems>
+  <subsystems>Subsystem.КонструкторРецептур</subsystems>
   <styles>Style.Основной</styles>
   <commonPictures>CommonPicture.Покупки</commonPictures>
   <commonPictures>CommonPicture.Сырье</commonPictures>
@@ -80,6 +81,7 @@
   <commonPictures>CommonPicture.ОбщаяКартинка6</commonPictures>
   <commonPictures>CommonPicture.ОбщаяКартинка7</commonPictures>
   <commonPictures>CommonPicture.Тендер</commonPictures>
+  <commonPictures>CommonPicture.КонструкторРецептур</commonPictures>
   <roles>Role.Администратор</roles>
   <roles>Role.Директор</roles>
   <roles>Role.Закупщик</roles>
