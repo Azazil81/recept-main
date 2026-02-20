@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="201ab21f-d768-4010-a78a-18f658309817">
+  <producedTypes>
+    <objectType typeId="5ba75e5a-43c4-4ad6-aa1d-3f1943ac4dda" valueTypeId="8992e998-c719-435a-b2c7-f67ddc854736"/>
+    <managerType typeId="4168fac5-94b5-4de4-9d5a-5d6e16837821" valueTypeId="1d83141d-d6c9-4a8e-8c23-700fc3952493"/>
+  </producedTypes>
+  <name>ТабличныйКонструкторРецептур</name>
+  <synonym>
+    <key>ru</key>
+    <value>Конструктор рецептур</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ТабличныйКонструкторРецептур.Form.ФормаСравненияРецептур</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="610b39c4-1f2b-41ab-a12a-9c390d26280e">
+    <name>ПодборРецептур</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подбор рецептур для сравнения</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="47f570a4-dc57-4f97-9616-5ff777dfdb0a">
+    <name>ФормаСравненияРецептур</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма сравнения рецептур</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

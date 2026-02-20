@@ -164,6 +164,7 @@
   <reports>Report.КоличествоВыпускаПродукции</reports>
   <reports>Report.ТекущиеОстатки</reports>
   <reports>Report.ПродажиПоМесяцам</reports>
+  <dataProcessors>DataProcessor.ТабличныйКонструкторРецептур</dataProcessors>
   <informationRegisters>InformationRegister.ЦеныМатериалов</informationRegisters>
   <informationRegisters>InformationRegister.ЦенаПокупки</informationRegisters>
   <informationRegisters>InformationRegister.Рецепт</informationRegisters>

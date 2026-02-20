@@ -11,4 +11,5 @@
   <picture xsi:type="core:PictureRef">
     <picture>CommonPicture.КонструкторРецептур</picture>
   </picture>
+  <content>DataProcessor.ТабличныйКонструкторРецептур</content>
 </mdclass:Subsystem>
