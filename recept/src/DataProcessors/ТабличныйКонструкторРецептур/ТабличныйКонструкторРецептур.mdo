@@ -10,7 +10,7 @@
     <value>Конструктор рецептур</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <defaultForm>DataProcessor.ТабличныйКонструкторРецептур.Form.ФормаСравненияРецептур</defaultForm>
+  <defaultForm>DataProcessor.ТабличныйКонструкторРецептур.Form.ПодборРецептур</defaultForm>
   <help>
     <pages>
       <lang>ru</lang>
