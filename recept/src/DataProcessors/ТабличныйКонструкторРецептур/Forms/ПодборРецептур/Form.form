@@ -377,8 +377,7 @@
       </title>
       <id>3</id>
       <valueType>
-        <types>String</types>
-        <stringQualifiers/>
+        <types>DocumentRef.Рецепт</types>
       </valueType>
       <view>
         <common>true</common>
@@ -418,6 +417,11 @@
     <use>
       <common>true</common>
     </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Сравнить</name>
+      </handler>
+    </action>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <commandInterface>
