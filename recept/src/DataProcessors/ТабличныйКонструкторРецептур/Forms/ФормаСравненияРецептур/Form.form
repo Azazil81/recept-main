@@ -40,11 +40,13 @@
       <horizontalStretch>true</horizontalStretch>
       <verticalStretch>true</verticalStretch>
       <showGrid>true</showGrid>
+      <showHeaders>true</showHeaders>
       <pointerType>Special</pointerType>
       <verticalScrollBar>ScrollAuto</verticalScrollBar>
       <horizontalScrollBar>ScrollAuto</horizontalScrollBar>
       <selectionShowMode>Always</selectionShowMode>
       <drawingSelectionShowMode>Auto</drawingSelectionShowMode>
+      <edit>true</edit>
       <showGroups>true</showGroups>
       <enableStartDrag>true</enableStartDrag>
       <enableDrag>true</enableDrag>
@@ -56,8 +58,8 @@
     <horizontalAlign>Left</horizontalAlign>
   </autoCommandBar>
   <handlers>
-    <event>OnOpen</event>
-    <name>ПриОткрытии</name>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
   </handlers>
   <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
