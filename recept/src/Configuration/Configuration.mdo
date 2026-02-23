@@ -96,6 +96,7 @@
   <roles>Role.Просмотр</roles>
   <roles>Role.ОтчетПоПродажам</roles>
   <roles>Role.ТендерныйСпециалист</roles>
+  <roles>Role.Технолог</roles>
   <commonModules>CommonModule.РаботаСоСправочниками</commonModules>
   <commonModules>CommonModule.РассчетЗначений</commonModules>
   <httpServices>HTTPService.Заявки</httpServices>
