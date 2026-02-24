@@ -17,19 +17,19 @@
     </dataPath>
     <titleLocation>None</titleLocation>
     <items xsi:type="form:FormField">
-      <name>Наименование</name>
-      <id>20</id>
+      <name>СсылкаНаименование</name>
+      <id>47</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Сырье.Наименование</segments>
+        <segments>Сырье.Ссылка.Наименование</segments>
       </dataPath>
       <extendedTooltip>
-        <name>НаименованиеРасширеннаяПодсказка</name>
-        <id>22</id>
+        <name>СсылкаНаименованиеРасширеннаяПодсказка</name>
+        <id>49</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -38,18 +38,22 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>НаименованиеКонтекстноеМеню</name>
-        <id>21</id>
+        <name>СсылкаНаименованиеКонтекстноеМеню</name>
+        <id>48</id>
         <autoFill>true</autoFill>
       </contextMenu>
-      <type>LabelField</type>
+      <type>InputField</type>
       <editMode>Enter</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:LabelFieldExtInfo">
+      <extInfo xsi:type="form:InputFieldExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
@@ -476,12 +480,11 @@
     <main>true</main>
     <extInfo xsi:type="form:DynamicListExtInfo">
       <queryText>ВЫБРАТЬ
-	НоменклатураМатериалы.Код КАК Артикул,
-	НоменклатураМатериалы.Наименование КАК Наименование,
 	НоменклатураМатериалы.МинимальныйОстаток КАК МинимальныйОстаток,
 	ОстаткиМатериаловОстатки.ОстатокОстаток КАК Остаток,
 	ЦеныМатериаловСрезПоследних.Цена КАК Цена,
-	ПотребностьМатериаловОстатки.ПотребностьОстаток КАК Потребность
+	ПотребностьМатериаловОстатки.ПотребностьОстаток КАК Потребность,
+	НоменклатураМатериалы.Ссылка
 ИЗ
 	Справочник.НоменклатураМатериалы КАК НоменклатураМатериалы
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.ОстаткиМатериалов.Остатки КАК ОстаткиМатериаловОстатки
@@ -498,18 +501,6 @@
       <customQuery>true</customQuery>
       <autoSaveUserSettings>true</autoSaveUserSettings>
       <getInvisibleFieldPresentations>true</getInvisibleFieldPresentations>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Артикул</dataPath>
-        <field>Артикул</field>
-        <title>
-          <localValue>
-            <content>
-              <key>ru</key>
-              <value>Артикул</value>
-            </content>
-          </localValue>
-        </title>
-      </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Наименование</dataPath>
         <field>Наименование</field>
@@ -543,36 +534,52 @@
         <field>Документ</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ЕдиницаИзмеренияСырья</dataPath>
-        <field>ЕдиницаИзмеренияСырья</field>
+        <dataPath>Потребность</dataPath>
+        <field>Потребность</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Потребность</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Ссылка</dataPath>
+        <field>Ссылка</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Код</dataPath>
         <field>Код</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Фасовка</dataPath>
-        <field>Фасовка</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>RAL</dataPath>
-        <field>RAL</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Цвет</dataPath>
-        <field>Цвет</field>
+        <dataPath>ЕдиницаИзмеренияСырья</dataPath>
+        <field>ЕдиницаИзмеренияСырья</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ТипНоменклатуры</dataPath>
         <field>ТипНоменклатуры</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>МестоХранения</dataPath>
-        <field>МестоХранения</field>
+        <dataPath>Цвет</dataPath>
+        <field>Цвет</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>RAL</dataPath>
+        <field>RAL</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Фасовка</dataPath>
+        <field>Фасовка</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Примечание</dataPath>
         <field>Примечание</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>МестоХранения</dataPath>
+        <field>МестоХранения</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Вязкость</dataPath>
@@ -581,6 +588,10 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Перетир</dataPath>
         <field>Перетир</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВходнойКонтроль</dataPath>
+        <field>ВходнойКонтроль</field>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Предопределенный</dataPath>
@@ -601,22 +612,6 @@
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>ЭтоГруппа</dataPath>
         <field>ЭтоГруппа</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Ссылка</dataPath>
-        <field>Ссылка</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Потребность</dataPath>
-        <field>Потребность</field>
-        <title>
-          <localValue>
-            <content>
-              <key>ru</key>
-              <value>Потребность</value>
-            </content>
-          </localValue>
-        </title>
       </fields>
       <parameters>
         <name>Период</name>
