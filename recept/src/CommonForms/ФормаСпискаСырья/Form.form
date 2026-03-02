@@ -25,7 +25,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Сырье.Ссылка.Наименование</segments>
+        <segments>Сырье.Ссылка.Description</segments>
       </dataPath>
       <extendedTooltip>
         <name>СсылкаНаименованиеРасширеннаяПодсказка</name>

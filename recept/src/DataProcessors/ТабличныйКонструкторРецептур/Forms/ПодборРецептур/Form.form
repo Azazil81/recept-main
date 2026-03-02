@@ -13,13 +13,13 @@
     </dataPath>
     <titleLocation>None</titleLocation>
     <excludedCommands>Add</excludedCommands>
-    <excludedCommands>MoveUp</excludedCommands>
-    <excludedCommands>MoveDown</excludedCommands>
+    <excludedCommands>Change</excludedCommands>
+    <excludedCommands>Copy</excludedCommands>
     <excludedCommands>CopyToClipboard</excludedCommands>
     <excludedCommands>Delete</excludedCommands>
     <excludedCommands>EndEdit</excludedCommands>
-    <excludedCommands>Change</excludedCommands>
-    <excludedCommands>Copy</excludedCommands>
+    <excludedCommands>MoveDown</excludedCommands>
+    <excludedCommands>MoveUp</excludedCommands>
     <items xsi:type="form:FormField">
       <name>РецептурыВыбор</name>
       <id>14</id>

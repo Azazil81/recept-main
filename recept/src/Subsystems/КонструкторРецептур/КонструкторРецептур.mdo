@@ -12,5 +12,4 @@
     <picture>CommonPicture.КонструкторРецептур</picture>
   </picture>
   <content>DataProcessor.ТабличныйКонструкторРецептур</content>
-  <content>Role.Технолог</content>
 </mdclass:Subsystem>

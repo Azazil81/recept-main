@@ -16,7 +16,7 @@
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
   <vendor>Azazil</vendor>
-  <version>1.4.0.19</version>
+  <version>1.5.0.0</version>
   <usedMobileApplicationFunctionalities>
     <functionality>
       <use>true</use>

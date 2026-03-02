@@ -49,13 +49,13 @@
 					<dcscor:value xsi:type="xs:decimal">15</dcscor:value>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">15</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>МинимальнаяВысота</dcscor:parameter>
 					<dcscor:value xsi:type="xs:decimal">30</dcscor:value>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
-					<dcscor:value xsi:type="xs:decimal">15</dcscor:value>
 				</dcscor:item>
 			</appearance>
 		</field>
@@ -113,11 +113,6 @@
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
 					<dcscor:value xsi:type="xs:decimal">5</dcscor:value>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:use>false</dcscor:use>
-					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
-					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
 				</dcscor:item>
 			</appearance>
 		</field>
@@ -219,11 +214,11 @@
 			</title>
 			<appearance>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
 					<dcscor:value xsi:type="xs:decimal">5</dcscor:value>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
 					<dcscor:value xsi:type="xs:decimal">5</dcscor:value>
 				</dcscor:item>
 			</appearance>
@@ -266,12 +261,12 @@
 				<dcscor:value xsi:type="xs:decimal">10</dcscor:value>
 			</dcscor:item>
 			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-				<dcscor:parameter>МинимальнаяВысота</dcscor:parameter>
-				<dcscor:value xsi:type="xs:decimal">25</dcscor:value>
-			</dcscor:item>
-			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 				<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
 				<dcscor:value xsi:type="xs:decimal">15</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>МинимальнаяВысота</dcscor:parameter>
+				<dcscor:value xsi:type="xs:decimal">25</dcscor:value>
 			</dcscor:item>
 		</appearance>
 		<valueType>
