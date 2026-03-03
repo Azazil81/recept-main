@@ -29,7 +29,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Продукция.Ссылка.Code</segments>
+        <segments>Продукция.Ссылка.Код</segments>
       </dataPath>
       <extendedTooltip>
         <name>СсылкаКодРасширеннаяПодсказка</name>
@@ -57,6 +57,50 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
+      <name>Партия</name>
+      <id>113</id>
+      <title>
+        <key>ru</key>
+        <value>Партия нов.</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Продукция.Партия</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ПартияРасширеннаяПодсказка</name>
+        <id>115</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ПартияКонтекстноеМеню</name>
+        <id>114</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
       <name>СсылкаНаименование</name>
       <id>86</id>
       <visible>true</visible>
@@ -65,7 +109,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Продукция.Ссылка.Description</segments>
+        <segments>Продукция.Ссылка.Наименование</segments>
       </dataPath>
       <extendedTooltip>
         <name>СсылкаНаименованиеРасширеннаяПодсказка</name>
@@ -862,7 +906,8 @@
 	СтатусПродукцииСрезПоследних.Статус КАК Статус,
 	СтатусПродукцииСрезПоследних.Регистратор КАК Регистратор,
 	СведенияВПродукцииИзСчетовСрезПоследних.Регистратор.Номер КАК НомерСчета,
-	СведенияВПродукцииИзСчетовСрезПоследних.НомерСчета КАК НомерСчета1
+	СведенияВПродукцииИзСчетовСрезПоследних.НомерСчета КАК НомерСчета1,
+	ЦеныМатериаловСрезПоследних.Регистратор.Номер КАК Партия
 ИЗ
 	Справочник.НоменклатураМатериалы КАК НоменклатураМатериалы
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.ОстаткиМатериалов.Остатки КАК ОстаткиМатериаловОстатки
@@ -943,76 +988,16 @@
         </title>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Код</dataPath>
-        <field>Код</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ЕдиницаИзмеренияСырья</dataPath>
-        <field>ЕдиницаИзмеренияСырья</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>МинимальныйОстаток</dataPath>
-        <field>МинимальныйОстаток</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ТипНоменклатуры</dataPath>
-        <field>ТипНоменклатуры</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Цвет</dataPath>
-        <field>Цвет</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>RAL</dataPath>
-        <field>RAL</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Фасовка</dataPath>
-        <field>Фасовка</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Примечание</dataPath>
-        <field>Примечание</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>МестоХранения</dataPath>
-        <field>МестоХранения</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Вязкость</dataPath>
-        <field>Вязкость</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Перетир</dataPath>
-        <field>Перетир</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ВходнойКонтроль</dataPath>
-        <field>ВходнойКонтроль</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Предопределенный</dataPath>
-        <field>Предопределенный</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ИмяПредопределенныхДанных</dataPath>
-        <field>ИмяПредопределенныхДанных</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ПометкаУдаления</dataPath>
-        <field>ПометкаУдаления</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Родитель</dataPath>
-        <field>Родитель</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ЭтоГруппа</dataPath>
-        <field>ЭтоГруппа</field>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Ссылка</dataPath>
-        <field>Ссылка</field>
+        <dataPath>Партия</dataPath>
+        <field>Партия</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Партия</value>
+            </content>
+          </localValue>
+        </title>
       </fields>
       <parameters>
         <name>ТипНоменклатуры</name>
