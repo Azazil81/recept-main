@@ -3173,10 +3173,6 @@
       <event>AfterWrite</event>
       <name>ПослеЗаписи</name>
     </handlers>
-    <handlers>
-      <event>OnReadAtServer</event>
-      <name>ПриЧтенииНаСервере</name>
-    </handlers>
     <repostOnWrite>true</repostOnWrite>
   </extInfo>
 </form:Form>
