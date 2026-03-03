@@ -61,10 +61,8 @@
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
   <numberType>String</numberType>
-  <numberLength>9</numberLength>
+  <numberLength>50</numberLength>
   <numberAllowedLength>Variable</numberAllowedLength>
-  <checkUnique>true</checkUnique>
-  <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ВыпускПродукции.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>AccumulationRegister.СтоимостьМатериалов</registerRecords>
   <registerRecords>InformationRegister.ЦеныМатериалов</registerRecords>
