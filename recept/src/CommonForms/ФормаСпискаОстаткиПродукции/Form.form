@@ -29,7 +29,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Продукция.Ссылка.Код</segments>
+        <segments>Продукция.Ref.Code</segments>
       </dataPath>
       <extendedTooltip>
         <name>СсылкаКодРасширеннаяПодсказка</name>
@@ -109,7 +109,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Продукция.Ссылка.Наименование</segments>
+        <segments>Продукция.Ref.Description</segments>
       </dataPath>
       <extendedTooltip>
         <name>СсылкаНаименованиеРасширеннаяПодсказка</name>
@@ -149,7 +149,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Продукция.Ссылка.Цвет</segments>
+        <segments>Продукция.Ref.Цвет</segments>
       </dataPath>
       <extendedTooltip>
         <name>СсылкаЦветРасширеннаяПодсказка</name>
@@ -189,7 +189,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Продукция.Ссылка.RAL</segments>
+        <segments>Продукция.Ref.RAL</segments>
       </dataPath>
       <extendedTooltip>
         <name>СсылкаRALРасширеннаяПодсказка</name>
@@ -229,7 +229,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Продукция.Ссылка.Фасовка</segments>
+        <segments>Продукция.Ref.Фасовка</segments>
       </dataPath>
       <extendedTooltip>
         <name>СсылкаФасовкаРасширеннаяПодсказка</name>
@@ -538,7 +538,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Продукция.Ссылка.Вязкость</segments>
+        <segments>Продукция.Ref.Вязкость</segments>
       </dataPath>
       <extendedTooltip>
         <name>СсылкаВязкостьРасширеннаяПодсказка</name>
@@ -582,7 +582,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Продукция.Ссылка.Перетир</segments>
+        <segments>Продукция.Ref.Перетир</segments>
       </dataPath>
       <extendedTooltip>
         <name>СсылкаПеретирРасширеннаяПодсказка</name>
@@ -626,7 +626,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Продукция.Ссылка.ВходнойКонтроль</segments>
+        <segments>Продукция.Ref.ВходнойКонтроль</segments>
       </dataPath>
       <extendedTooltip>
         <name>СсылкаВходнойКонтрольРасширеннаяПодсказка</name>
@@ -663,7 +663,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Продукция.Ссылка.МестоХранения</segments>
+        <segments>Продукция.Ref.МестоХранения</segments>
       </dataPath>
       <extendedTooltip>
         <name>СсылкаМестоХраненияРасширеннаяПодсказка</name>
@@ -699,7 +699,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Продукция.Ссылка.Примечание</segments>
+        <segments>Продукция.Ref.Примечание</segments>
       </dataPath>
       <extendedTooltip>
         <name>СсылкаПримечаниеРасширеннаяПодсказка</name>
