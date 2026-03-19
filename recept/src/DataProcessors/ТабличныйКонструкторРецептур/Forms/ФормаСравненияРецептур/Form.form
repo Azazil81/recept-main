@@ -183,7 +183,7 @@
     <extInfo xsi:type="form:SpreadsheetDocumentExtInfo"/>
   </attributes>
   <attributes>
-    <name>КолонкаКлона</name>
+    <name>КоличествоКлонов</name>
     <id>6</id>
     <valueType>
       <types>Number</types>
