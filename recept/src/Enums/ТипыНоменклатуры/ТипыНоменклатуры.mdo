@@ -49,4 +49,11 @@
       <value>Услуга/Разделитель</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="7cbfaa3d-05aa-4974-b173-a7c61ad0bfc1">
+    <name>Комплект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комплект</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>
