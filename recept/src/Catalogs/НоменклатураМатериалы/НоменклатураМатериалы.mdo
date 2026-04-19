@@ -142,6 +142,14 @@
       </code>
       <isFolder>true</isFolder>
     </items>
+    <items id="938aa190-23ec-4573-bc0c-10db0ee26510">
+      <name>z_Архив</name>
+      <description>Z архив</description>
+      <code xsi:type="core:StringValue">
+        <value>09</value>
+      </code>
+      <isFolder>true</isFolder>
+    </items>
   </predefined>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>

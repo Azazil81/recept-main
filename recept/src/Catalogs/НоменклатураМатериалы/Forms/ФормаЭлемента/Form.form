@@ -61,51 +61,6 @@
         </extInfo>
       </items>
       <items xsi:type="form:FormField">
-        <name>Код</name>
-        <id>1</id>
-        <title>
-          <key>ru</key>
-          <value>Артикул</value>
-        </title>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <dataPath xsi:type="form:DataPath">
-          <segments>Объект.Code</segments>
-        </dataPath>
-        <extendedTooltip>
-          <name>КодРасширеннаяПодсказка</name>
-          <id>3</id>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </extendedTooltip>
-        <contextMenu>
-          <name>КодКонтекстноеМеню</name>
-          <id>2</id>
-          <autoFill>true</autoFill>
-        </contextMenu>
-        <type>InputField</type>
-        <editMode>EnterOnInput</editMode>
-        <showInHeader>true</showInHeader>
-        <headerHorizontalAlign>Left</headerHorizontalAlign>
-        <showInFooter>true</showInFooter>
-        <extInfo xsi:type="form:InputFieldExtInfo">
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <wrap>true</wrap>
-          <extendedEditMultipleValues>true</extendedEditMultipleValues>
-          <chooseType>true</chooseType>
-          <typeDomainEnabled>true</typeDomainEnabled>
-          <textEdit>true</textEdit>
-        </extInfo>
-      </items>
-      <items xsi:type="form:FormField">
         <name>Наименование</name>
         <id>4</id>
         <visible>true</visible>
@@ -176,51 +131,6 @@
     <items xsi:type="form:FormGroup">
       <name>Группа2</name>
       <id>72</id>
-      <items xsi:type="form:FormField">
-        <name>Номенклатура</name>
-        <id>67</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <dataPath xsi:type="form:DataPath">
-          <segments>Объект.Номенклатура</segments>
-        </dataPath>
-        <handlers>
-          <event>OnChange</event>
-          <name>НоменклатураПриИзменении</name>
-        </handlers>
-        <extendedTooltip>
-          <name>НоменклатураРасширеннаяПодсказка</name>
-          <id>69</id>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </extendedTooltip>
-        <contextMenu>
-          <name>НоменклатураКонтекстноеМеню</name>
-          <id>68</id>
-          <autoFill>true</autoFill>
-        </contextMenu>
-        <type>InputField</type>
-        <editMode>Enter</editMode>
-        <showInHeader>true</showInHeader>
-        <headerHorizontalAlign>Left</headerHorizontalAlign>
-        <showInFooter>true</showInFooter>
-        <extInfo xsi:type="form:InputFieldExtInfo">
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <wrap>true</wrap>
-          <extendedEditMultipleValues>true</extendedEditMultipleValues>
-          <chooseType>true</chooseType>
-          <typeDomainEnabled>true</typeDomainEnabled>
-          <textEdit>true</textEdit>
-        </extInfo>
-      </items>
       <items xsi:type="form:FormField">
         <name>Фасовка</name>
         <id>64</id>
@@ -501,7 +411,6 @@
           <currentRowUse>Auto</currentRowUse>
         </extInfo>
       </items>
-      <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
@@ -723,7 +632,6 @@
     <items xsi:type="form:FormField">
       <name>МестоХранения</name>
       <id>76</id>
-      <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0e3cdc7b-cc37-4054-9c43-1111877ad396">
+  <producedTypes>
+    <selectionType typeId="c355b9de-01e2-41e8-a836-523fea29d949" valueTypeId="7ddf9e75-32ed-401e-a4c0-dba00439396b"/>
+    <listType typeId="ddcba43d-da95-4c02-9b4a-178d3dc30fae" valueTypeId="fabe25ad-fbf0-4103-afa1-faa7814ddaab"/>
+    <managerType typeId="b00b3b42-0beb-4299-b15c-dff7743dfacd" valueTypeId="dd769a57-0c36-4615-8431-4696a9127d0c"/>
+    <recordSetType typeId="e26748b2-a720-4efa-bc7d-7966d4d81ffe" valueTypeId="65728458-536c-4eee-a07e-e11c9bc50340"/>
+    <recordKeyType typeId="e4250136-dd8b-4773-9335-c476af72000a" valueTypeId="cbce1feb-95da-48f4-81e4-ea97c54565f0"/>
+    <recordType typeId="1334de3e-c249-4b3a-9902-c3e32d354b34" valueTypeId="ce257836-5e7a-4c75-a188-62f4a0f15d29"/>
+    <recordManagerType typeId="2976f506-3a8a-457e-9bf9-7696856f829d" valueTypeId="86bea02d-9e85-4fd3-92d2-c5fe755eb2de"/>
+  </producedTypes>
+  <name>СоставыКомплектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Составы комплектов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="12201501-e5bb-493a-a878-1de14993432a">
+    <name>ВесБазы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес базы</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f643d1e1-8aa0-42a6-bf3b-3da50d5c203d">
+    <name>Ном1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ном1</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НоменклатураМатериалы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="88bcb6c8-bb1c-4627-b4e3-5cacf5c7dc36">
+    <name>Вес1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес1</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c4309949-a7d0-4fda-ad46-26b637eaffe8">
+    <name>Ном2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ном2</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НоменклатураМатериалы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="da9e8bcb-e29f-41a7-8cd8-8344c3db1ecc">
+    <name>Вес2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес2</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b8445828-45f2-44ca-9fa8-89e9b322cdfb">
+    <name>Ном3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ном3</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НоменклатураМатериалы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="22c69ac6-108d-4d6a-82bd-0516a6d3d990">
+    <name>Вес3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес3</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c75d3763-9065-4a04-ae2b-08e21b873e18">
+    <name>НоменклатураКомплекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура комплекта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НоменклатураМатериалы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

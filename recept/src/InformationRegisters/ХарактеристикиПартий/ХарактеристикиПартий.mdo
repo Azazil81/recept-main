@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7c34a95d-6e99-4fa7-a39b-b373fde3eed9">
+  <producedTypes>
+    <selectionType typeId="59790aed-59a1-4788-a667-1539aacda6d6" valueTypeId="8f731825-cb24-4637-b0d9-aa52186215ff"/>
+    <listType typeId="1c58e13c-28b2-4680-bd45-07ee87045166" valueTypeId="2c094683-cdd4-4902-953f-2c208accea6d"/>
+    <managerType typeId="95a56204-88b3-4a70-a1be-e12039330b11" valueTypeId="22ae0e5c-d8e5-496c-8005-a982f0ff2503"/>
+    <recordSetType typeId="418a4ceb-4844-4351-8a2d-99c5ad57e3e4" valueTypeId="e399833a-abf8-48ed-b9fc-f040cf935b3a"/>
+    <recordKeyType typeId="3a58a4cd-1742-40ed-9868-ad98ae9618ba" valueTypeId="8ce588b4-ab8b-4a95-b614-8f645f3ec9e8"/>
+    <recordType typeId="da335907-db5a-4390-aefe-d2d1b87a4d0b" valueTypeId="fd44d8b3-58c2-406a-a4de-c29ad5680395"/>
+    <recordManagerType typeId="92847173-22cb-474e-b356-c57b6e9ebce5" valueTypeId="e5b69d7a-a90c-45f2-8ede-b68b7de0e40f"/>
+  </producedTypes>
+  <name>ХарактеристикиПартий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Характеристики партий</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="58b4efd0-ff1a-4790-b69d-cabd09a792fd">
+    <name>Цвет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цвет</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Цвет</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b4469f51-5585-4c9e-ab09-5628d72953fd">
+    <name>RAL</name>
+    <synonym>
+      <key>ru</key>
+      <value>RAL</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.RAL</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6e676c43-c5ac-4afe-b11b-c8c3816c8082">
+    <name>Фасовка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фасовка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Фасовка</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1b8b2fdf-f16f-4ace-bcdd-051206842e3c">
+    <name>Вязкость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вязкость</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3fda587b-33fd-4aaa-971c-054e7ab88931">
+    <name>Перетир</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перетир</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="dd5a63aa-868c-49f5-850d-321c2e1cfb38">
+    <name>ВходнойКонтроль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Входной контроль</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="87d08add-43e7-48e0-bf7f-4e1bdcdd1615">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НоменклатураМатериалы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="eb1d3b1f-1dd1-492f-9765-213dd0e57d76">
+    <name>Партия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ВыпускПродукции</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
