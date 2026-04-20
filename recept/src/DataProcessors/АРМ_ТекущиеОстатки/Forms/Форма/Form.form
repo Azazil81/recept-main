@@ -133,19 +133,23 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>Партия</name>
-      <id>230</id>
+      <name>ПартияНомер</name>
+      <id>242</id>
+      <title>
+        <key>ru</key>
+        <value>Партия</value>
+      </title>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>СписокОстатков.Партия</segments>
+        <segments>СписокОстатков.Партия.Номер</segments>
       </dataPath>
       <extendedTooltip>
-        <name>ПартияРасширеннаяПодсказка</name>
-        <id>232</id>
+        <name>ПартияНомерРасширеннаяПодсказка</name>
+        <id>244</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -154,8 +158,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ПартияКонтекстноеМеню</name>
-        <id>231</id>
+        <name>ПартияНомерКонтекстноеМеню</name>
+        <id>243</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
@@ -240,6 +244,46 @@
       <contextMenu>
         <name>ФасовкаКонтекстноеМеню</name>
         <id>234</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Цена</name>
+      <id>245</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>СписокОстатков.Цена</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ЦенаРасширеннаяПодсказка</name>
+        <id>247</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ЦенаКонтекстноеМеню</name>
+        <id>246</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
@@ -383,7 +427,6 @@
     <name>ФормаКоманднаяПанель</name>
     <id>-1</id>
     <horizontalAlign>Left</horizontalAlign>
-    <autoFill>true</autoFill>
   </autoCommandBar>
   <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
@@ -431,9 +474,12 @@
 	ОстаткиМатериаловОстатки.ОстатокОстаток КАК ОстатокОстаток,
 	
 	// Подтягиваем характеристики конкретной партии
-    ЕСТЬNULL(Характеристики.Цвет, ЗНАЧЕНИЕ(Справочник.Цвет.ПустаяСсылка)) КАК Цвет,
-    ЕСТЬNULL(Характеристики.RAL, ЗНАЧЕНИЕ(Справочник.RAL.ПустаяСсылка)) КАК RAL,
-    ЕСТЬNULL(Характеристики.Фасовка, ЗНАЧЕНИЕ(Справочник.Фасовка.ПустаяСсылка)) КАК Фасовка,  
+    ЕСТЬNULL(Характеристики.Цвет, &quot;—&quot;) КАК Цвет,
+    ЕСТЬNULL(Характеристики.RAL, &quot;—&quot;) КАК RAL,
+    ЕСТЬNULL(Характеристики.Фасовка, &quot;—&quot;) КАК Фасовка,  
+    
+	// Справочная цена из Регистра Сведений
+    ЕСТЬNULL(Цены.Цена, 0) КАК Цена,
     
 	// Подтягиваем данные для формулы состава
     ЕСТЬNULL(Составы.ВесБазы, 0) КАК ВесБазы,
@@ -448,12 +494,17 @@
 		ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Комплект))
 		) КАК ОстаткиМатериаловОстатки 
 	
-		// Присоединяем паспорт партии
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ХарактеристикиПартий КАК Характеристики
-			ПО ОстаткиМатериаловОстатки.Партия = Характеристики.Партия
-			И ОстаткиМатериаловОстатки.Наименование = Характеристики.Номенклатура
+	// Присоединяем паспорт партии
+	ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ХарактеристикиПартий КАК Характеристики
+		ПО ОстаткиМатериаловОстатки.Партия = Характеристики.Партия
+		И ОстаткиМатериаловОстатки.Наименование = Характеристики.Номенклатура
 			
-		// Присоединяем эталонный состав для расчета комплектов
+	// Присоединяем справочную цену (учитываем Партию)
+    	ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныМатериалов КАК Цены
+        	ПО ОстаткиМатериаловОстатки.Партия = Цены.Партия
+        	И ОстаткиМатериаловОстатки.Наименование = Цены.Номенклатура
+			
+	// Присоединяем эталонный состав для расчета комплектов
     	ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СоставыКомплектов КАК Составы
         	ПО ОстаткиМатериаловОстатки.Наименование = Составы.НоменклатураКомплекта
 </queryText>
@@ -554,6 +605,18 @@
             <content>
               <key>ru</key>
               <value>Вес3</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Цена</dataPath>
+        <field>Цена</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Цена</value>
             </content>
           </localValue>
         </title>
