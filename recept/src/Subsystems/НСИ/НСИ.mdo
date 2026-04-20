@@ -31,4 +31,5 @@
   <content>Document.ВыпускПродукции</content>
   <content>Document.ДокументПродажи</content>
   <content>Document.ПервоначальныеОстатки</content>
+  <content>DataProcessor.АРМ_ТекущиеОстатки</content>
 </mdclass:Subsystem>
