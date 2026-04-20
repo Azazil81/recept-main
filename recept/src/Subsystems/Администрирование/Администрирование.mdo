@@ -32,4 +32,5 @@
   <content>Catalog.МестоХранения</content>
   <content>Report.РасшифровкаОборотовНоменклатуры</content>
   <content>InformationRegister.АрбитражнаяПроба</content>
+  <content>InformationRegister.ХарактеристикиПартий</content>
 </mdclass:Subsystem>
