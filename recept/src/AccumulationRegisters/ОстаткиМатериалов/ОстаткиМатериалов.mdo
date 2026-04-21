@@ -34,19 +34,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </resources>
-  <attributes uuid="96062287-812d-4b5c-af44-e99850b169a7">
-    <name>Статус</name>
-    <synonym>
-      <key>ru</key>
-      <value>Статус</value>
-    </synonym>
-    <type>
-      <types>EnumRef.СтатусыГотовностиПродукции</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-  </attributes>
   <dimensions uuid="aca7c115-5687-4888-b802-75b776dfe401">
     <name>Наименование</name>
     <synonym>
@@ -70,6 +57,20 @@
     </synonym>
     <type>
       <types>DocumentRef.ВыпускПродукции</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="b00d6938-c15d-4da5-8811-fa1d82c178b5">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыГотовностиПродукции</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

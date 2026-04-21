@@ -163,7 +163,7 @@
       <value>Номенклатура</value>
     </synonym>
     <type>
-      <types>CatalogRef.Номенклатура</types>
+      <types>CatalogRef.НоменклатураМатериалы</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
