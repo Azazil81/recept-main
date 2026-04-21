@@ -114,7 +114,6 @@
         <key>ru</key>
         <value>Партия</value>
       </title>
-      <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
