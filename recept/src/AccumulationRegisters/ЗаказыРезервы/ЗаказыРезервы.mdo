@@ -66,56 +66,14 @@
     <fullTextSearch>Use</fullTextSearch>
     <useInTotals>true</useInTotals>
   </dimensions>
-  <dimensions uuid="b223a3dc-316d-45c2-827c-04f86934ad3c">
-    <name>Цвет</name>
+  <dimensions uuid="eabdf5ca-7334-4764-92e2-5fd3b51cab5b">
+    <name>Характеристики</name>
     <synonym>
       <key>ru</key>
-      <value>Цвет</value>
+      <value>Характеристики</value>
     </synonym>
     <type>
-      <types>CatalogRef.Цвет</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <useInTotals>true</useInTotals>
-  </dimensions>
-  <dimensions uuid="e86877f3-8c79-4f8b-a41c-96108e0cc13a">
-    <name>RAL</name>
-    <synonym>
-      <key>ru</key>
-      <value>RAL</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.RAL</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <useInTotals>true</useInTotals>
-  </dimensions>
-  <dimensions uuid="5cf2d50a-0288-40e8-9565-7e50ceb117a8">
-    <name>Фасовка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Фасовка</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.Фасовка</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <useInTotals>true</useInTotals>
-  </dimensions>
-  <dimensions uuid="2bf082c7-6e87-4ae1-957b-5190d6c978dc">
-    <name>ВходнойКонтроль</name>
-    <synonym>
-      <key>ru</key>
-      <value>Входной контроль</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

@@ -345,14 +345,14 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="5128efb8-42b1-481a-84c7-242c6b121977">
-    <name>ВходнойКонтроль</name>
+  <attributes uuid="c65fb037-56bf-4a27-a906-77e4c7937e42">
+    <name>ХарактеристикиНоменклатуры</name>
     <synonym>
       <key>ru</key>
-      <value>Входной контроль</value>
+      <value>Характеристики номенклатуры</value>
     </synonym>
     <type>
-      <types>Boolean</types>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

@@ -11,5 +11,5 @@
   <picture xsi:type="core:PictureRef">
     <picture>CommonPicture.Продукция</picture>
   </picture>
-  <content>CommonForm.ФормаСпискаОстаткиПродукции</content>
+  <content>DataProcessor.АРМ_ТекущиеОстатки</content>
 </mdclass:Subsystem>

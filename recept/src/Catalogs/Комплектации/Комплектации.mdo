@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="589ec646-f432-4cef-b60b-44f08c878d20">
+  <producedTypes>
+    <objectType typeId="6d01c0f8-894e-40b1-8deb-5ca13ada52a7" valueTypeId="c60d9313-543d-4b1d-bcbe-c3543213f8a6"/>
+    <refType typeId="15bad5e2-e153-49bc-b448-d438f386e977" valueTypeId="79101b37-fce6-4e78-ad51-8103626284c3"/>
+    <selectionType typeId="d20a37f4-7a18-414c-9154-5b002e716f29" valueTypeId="be50447f-600a-4558-a1b9-b39102b0614d"/>
+    <listType typeId="c64947ce-2366-4270-bedb-b3cf2cf2e6b0" valueTypeId="4c00fcd2-91d1-4f58-b49a-890b1e8e1943"/>
+    <managerType typeId="e2e47527-e864-4356-8cd0-a58c02317d65" valueTypeId="c5a6a197-35ac-42e6-b00b-c1a0507edf5c"/>
+  </producedTypes>
+  <name>Комплектации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состав комплекта</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Комплектации.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Комплектации.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.НоменклатураМатериалы</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <tabularSections uuid="59efa3fe-1a17-4ad8-83fe-4cf052a48ec9">
+    <producedTypes>
+      <objectType typeId="97f03de7-b8d4-439e-8bec-cb981831a749" valueTypeId="ba7dd0d4-d966-493a-b70e-a7c856332410"/>
+      <rowType typeId="9e793e15-5323-4bdb-9f32-49b32677d11a" valueTypeId="7133f909-c6ce-4bf7-9942-0d37b775661d"/>
+    </producedTypes>
+    <name>Состав</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав</value>
+    </synonym>
+    <attributes uuid="7f6907ba-32a8-492d-82ad-9b89f70a37e1">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.НоменклатураМатериалы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8a0dd863-31aa-4206-a5f2-63031a0e34f3">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Catalog>

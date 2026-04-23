@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0fda2a30-ac11-4bb7-ba32-2250924a0be3">
+  <producedTypes>
+    <refType typeId="034eabfa-a372-4993-902f-3caec66ba087" valueTypeId="d42a6d25-7ff2-453b-b277-479795008705"/>
+    <listType typeId="8ebc2210-d743-4f30-883a-8fb6fc9555f9" valueTypeId="743ce45c-feb0-4022-802c-6d6181300236"/>
+    <managerType typeId="08aa6b1c-850c-4023-965b-a118435f9c09" valueTypeId="91d4ffe7-646f-49ea-9c2a-2a73ac9a11d9"/>
+  </producedTypes>
+  <name>ВариантОбеспеченияПоставки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вариант обеспечения поставки</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="7ab6c058-f8d5-4d18-865c-eb886acfa405">
+    <name>Резерв</name>
+    <synonym>
+      <key>ru</key>
+      <value>Резерв</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1a34c2bd-e444-43f7-8e62-b94656f39be9">
+    <name>РезервИДопроизводство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Резерв и допроизводство</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0127942c-0df9-4771-8022-b60379366c61">
+    <name>ТолькоПроизводство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Только производство</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

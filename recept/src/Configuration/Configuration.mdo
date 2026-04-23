@@ -16,7 +16,7 @@
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
   <vendor>Azazil</vendor>
-  <version>1.6.0.7</version>
+  <version>1.6.0.8</version>
   <usedMobileApplicationFunctionalities>
     <functionality>
       <use>true</use>
@@ -119,6 +119,8 @@
   <catalogs>Catalog.RAL</catalogs>
   <catalogs>Catalog.Фасовка</catalogs>
   <catalogs>Catalog.МестоХранения</catalogs>
+  <catalogs>Catalog.Комплектации</catalogs>
+  <catalogs>Catalog.ХарактеристикиНоменклатуры</catalogs>
   <documents>Document.ПриходнаяНакладная</documents>
   <documents>Document.СпиасниеВПроизводство</documents>
   <documents>Document.Рецептуры</documents>
@@ -149,6 +151,7 @@
   <enums>Enum.СписокСтатусовТендера</enums>
   <enums>Enum.СостояниеУчастияВТендере</enums>
   <enums>Enum.СтавкаНДС</enums>
+  <enums>Enum.ВариантОбеспеченияПоставки</enums>
   <reports>Report.СравнениеРецептур</reports>
   <reports>Report.ОстаткиМатериалов</reports>
   <reports>Report.Материалы</reports>

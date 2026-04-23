@@ -17,51 +17,6 @@
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="58b4efd0-ff1a-4790-b69d-cabd09a792fd">
-    <name>Цвет</name>
-    <synonym>
-      <key>ru</key>
-      <value>Цвет</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.Цвет</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="b4469f51-5585-4c9e-ab09-5628d72953fd">
-    <name>RAL</name>
-    <synonym>
-      <key>ru</key>
-      <value>RAL</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.RAL</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="6e676c43-c5ac-4afe-b11b-c8c3816c8082">
-    <name>Фасовка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Фасовка</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.Фасовка</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
   <resources uuid="1b8b2fdf-f16f-4ace-bcdd-051206842e3c">
     <name>Вязкость</name>
     <synonym>
@@ -93,21 +48,6 @@
         <precision>5</precision>
         <nonNegative>true</nonNegative>
       </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-  </resources>
-  <resources uuid="dd5a63aa-868c-49f5-850d-321c2e1cfb38">
-    <name>ВходнойКонтроль</name>
-    <synonym>
-      <key>ru</key>
-      <value>Входной контроль</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -258,6 +198,21 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
+  <resources uuid="2586825e-8142-49dd-95e0-1fcee31f1c49">
+    <name>ВходнойКонтроль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Входной контроль</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
   <dimensions uuid="87d08add-43e7-48e0-bf7f-4e1bdcdd1615">
     <name>Номенклатура</name>
     <synonym>
@@ -282,6 +237,22 @@
     </synonym>
     <type>
       <types>DocumentRef.ВыпускПродукции</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6bb5a6fe-7486-41bd-b6a7-b69d6131db42">
+    <name>ХарактеристикиНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристики номенклатуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
