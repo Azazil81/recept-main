@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7d05a500-ce35-4dfa-9964-fc87037914c8">
+  <producedTypes>
+    <selectionType typeId="5132ee83-05f4-4dc6-a7ba-c205c1157768" valueTypeId="d9e1e4ee-34d3-4eb2-9b60-4a8ab2ac99bc"/>
+    <listType typeId="e6f4c633-1b34-457c-aacc-3e699820e4ee" valueTypeId="791764f1-af25-453a-a537-f588e2c040fd"/>
+    <managerType typeId="4eca574f-5ec6-4f1a-983f-3a9c872cbdcc" valueTypeId="9194cedf-f662-4b8f-b329-597b38282965"/>
+    <recordSetType typeId="76982ca8-21ca-4828-8071-8a0576176809" valueTypeId="355a9ba4-bd3a-4493-b425-629a76fc9ce0"/>
+    <recordKeyType typeId="e4c0074b-423e-4099-9d8c-ab5390f1c83d" valueTypeId="6f18e673-df59-424f-911f-9edef2aa6be0"/>
+    <recordType typeId="82e6c785-69c1-44b0-a341-98b469ee5325" valueTypeId="7ac1197a-eebd-4589-bef5-f3d9c0c5aeea"/>
+    <recordManagerType typeId="da30cbdb-1004-4c74-9a06-b988e07c6900" valueTypeId="28c9516f-38f9-4a0e-989f-53fcaccf76d2"/>
+  </producedTypes>
+  <name>СтавкаНДСТовар</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ставка НДС товар</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="43b21034-ea34-4bfe-bff2-c3590d1bfef9">
+    <name>Ставка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+</mdclass:InformationRegister>

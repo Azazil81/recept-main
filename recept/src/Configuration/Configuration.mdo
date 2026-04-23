@@ -16,7 +16,7 @@
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
   <vendor>Azazil</vendor>
-  <version>1.6.0.8</version>
+  <version>1.6.0.9</version>
   <usedMobileApplicationFunctionalities>
     <functionality>
       <use>true</use>
@@ -179,6 +179,7 @@
   <informationRegisters>InformationRegister.СтатусОбеспеченияЗаказа</informationRegisters>
   <informationRegisters>InformationRegister.АрбитражнаяПроба</informationRegisters>
   <informationRegisters>InformationRegister.ХарактеристикиПартий</informationRegisters>
+  <informationRegisters>InformationRegister.СтавкаНДСТовар</informationRegisters>
   <accumulationRegisters>AccumulationRegister.СоставРецептур</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ОстаткиМатериалов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ПотребностьМатериалов</accumulationRegisters>

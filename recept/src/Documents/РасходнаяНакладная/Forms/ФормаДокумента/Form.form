@@ -572,6 +572,10 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.Товары.Номенклатура</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>ТоварыНоменклатураПриИзменении</name>
+      </handlers>
       <extendedTooltip>
         <name>ТоварыНоменклатураРасширеннаяПодсказка</name>
         <id>50</id>
@@ -614,6 +618,10 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.Товары.ХарактеристикиНоменклатуры</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>ТоварыХарактеристикиНоменклатурыПриИзменении</name>
+      </handlers>
       <extendedTooltip>
         <name>ТоварыХарактеристикиНоменклатурыРасширеннаяПодсказка</name>
         <id>164</id>
@@ -701,6 +709,10 @@
         <dataPath xsi:type="form:DataPath">
           <segments>Объект.Товары.Количество</segments>
         </dataPath>
+        <handlers>
+          <event>OnChange</event>
+          <name>ТоварыКоличествоПриИзменении</name>
+        </handlers>
         <extendedTooltip>
           <name>ТоварыКоличествоРасширеннаяПодсказка</name>
           <id>34</id>
@@ -888,6 +900,10 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.Товары.ЦенаПродажи</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>ТоварыЦенаПродажиПриИзменении</name>
+      </handlers>
       <extendedTooltip>
         <name>ТоварыЦенаПродажиРасширеннаяПодсказка</name>
         <id>40</id>
@@ -946,6 +962,130 @@
       </contextMenu>
       <type>InputField</type>
       <editMode>EnterOnInput</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>ТоварыНДССтавка</name>
+      <id>165</id>
+      <title>
+        <key>ru</key>
+        <value>% НДС</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Товары.НДССтавка</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ТоварыНДССтавкаРасширеннаяПодсказка</name>
+        <id>167</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ТоварыНДССтавкаКонтекстноеМеню</name>
+        <id>166</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>ТоварыНДС</name>
+      <id>168</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Товары.НДС</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ТоварыНДСРасширеннаяПодсказка</name>
+        <id>170</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ТоварыНДСКонтекстноеМеню</name>
+        <id>169</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>ТоварыВсегоСНДС</name>
+      <id>171</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Товары.ВсегоСНДС</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ТоварыВсегоСНДСРасширеннаяПодсказка</name>
+        <id>173</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ТоварыВсегоСНДСКонтекстноеМеню</name>
+        <id>172</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
