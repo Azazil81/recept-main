@@ -35,7 +35,7 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <defaultObjectForm>Document.РасходнаяНакладная.Form.ФормаДокумента</defaultObjectForm>
   <defaultListForm>Document.РасходнаяНакладная.Form.ФормаСписка</defaultListForm>
-  <defaultChoiceForm>Document.РасходнаяНакладная.Form.ФормаВыбора</defaultChoiceForm>
+  <defaultChoiceForm>Document.РасходнаяНакладная.Form.ФормаПодбора</defaultChoiceForm>
   <registerRecords>AccumulationRegister.СтоимостьМатериалов</registerRecords>
   <registerRecords>InformationRegister.СтатусПродукции</registerRecords>
   <registerRecords>InformationRegister.СведенияВПродукцииИзСчетов</registerRecords>
@@ -243,10 +243,10 @@
     <usePurposes>MobileDevice</usePurposes>
   </forms>
   <forms uuid="c0554fdc-42ce-4883-998b-9a84be8ad58e">
-    <name>ФормаВыбора</name>
+    <name>ФормаПодбора</name>
     <synonym>
       <key>ru</key>
-      <value>Форма выбора</value>
+      <value>Форма подбора</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
@@ -538,6 +538,20 @@
           <scale>2</scale>
           <nonNegative>true</nonNegative>
         </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="a4f9a2cf-b168-4508-85d1-4acfda296213">
+      <name>ВходнойКонтроль</name>
+      <synonym>
+        <key>ru</key>
+        <value>Входной контроль</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

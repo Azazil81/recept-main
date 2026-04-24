@@ -564,7 +564,6 @@
     <items xsi:type="form:FormField">
       <name>ТоварыНоменклатура</name>
       <id>48</id>
-      <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
@@ -610,7 +609,6 @@
     <items xsi:type="form:FormField">
       <name>ТоварыХарактеристикиНоменклатуры</name>
       <id>162</id>
-      <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
@@ -650,6 +648,96 @@
         <typeDomainEnabled>true</typeDomainEnabled>
         <textEdit>true</textEdit>
       </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>ТоварыСтрокаПоискаТовара</name>
+      <id>177</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Товары.СтрокаПоискаТовара</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ТоварыСтрокаПоискаТовараРасширеннаяПодсказка</name>
+        <id>179</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ТоварыСтрокаПоискаТовараКонтекстноеМеню</name>
+        <id>178</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <handlers>
+          <event>AutoComplete</event>
+          <name>ТоварыСтрокаПоискаТовараАвтоПодбор</name>
+        </handlers>
+        <handlers>
+          <event>Clearing</event>
+          <name>ТоварыСтрокаПоискаТовараОчистка</name>
+        </handlers>
+        <handlers>
+          <event>ChoiceProcessing</event>
+          <name>ТоварыСтрокаПоискаТовараОбработкаВыбора</name>
+        </handlers>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+        <editTextUpdate>OnValueChange</editTextUpdate>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>ТоварыВходнойКонтроль</name>
+      <id>174</id>
+      <title>
+        <key>ru</key>
+        <value>ВК</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Товары.ВходнойКонтроль</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ТоварыВходнойКонтрольРасширеннаяПодсказка</name>
+        <id>176</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ТоварыВходнойКонтрольКонтекстноеМеню</name>
+        <id>175</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
     </items>
     <items xsi:type="form:FormField">
       <name>ТоварыДействие</name>
@@ -1415,6 +1503,10 @@
     <horizontalAlign>Left</horizontalAlign>
     <autoFill>true</autoFill>
   </autoCommandBar>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
   <saveWindowSettings>true</saveWindowSettings>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
@@ -1466,6 +1558,26 @@
           <common>true</common>
         </edit>
       </columns>
+      <columns>
+        <name>СтрокаПоискаТовара</name>
+        <title>
+          <key>ru</key>
+          <value>Номенклатура</value>
+        </title>
+        <id>7</id>
+        <valueType>
+          <types>String</types>
+          <stringQualifiers>
+            <length>250</length>
+          </stringQualifiers>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
     </additionalColumns>
   </attributes>
   <commandInterface>
@@ -1473,6 +1585,14 @@
     <commandBar/>
   </commandInterface>
   <extInfo xsi:type="form:DocumentFormExtInfo">
+    <handlers>
+      <event>AfterWriteAtServer</event>
+      <name>ПослеЗаписиНаСервере</name>
+    </handlers>
+    <handlers>
+      <event>OnReadAtServer</event>
+      <name>ПриЧтенииНаСервере</name>
+    </handlers>
     <repostOnWrite>true</repostOnWrite>
   </extInfo>
 </form:Form>
