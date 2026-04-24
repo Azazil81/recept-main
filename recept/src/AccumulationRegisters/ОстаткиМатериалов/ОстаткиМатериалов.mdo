@@ -67,6 +67,20 @@
     <fullTextSearch>Use</fullTextSearch>
     <useInTotals>true</useInTotals>
   </dimensions>
+  <dimensions uuid="94b14bba-50ec-4146-ac6f-e68217ae7a14">
+    <name>Характеристики</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристики</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
   <dimensions uuid="de15cb3d-cdc8-4723-acb9-36f4cefe5d65">
     <name>Партия</name>
     <synonym>
@@ -75,20 +89,6 @@
     </synonym>
     <type>
       <types>DocumentRef.ВыпускПродукции</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <useInTotals>true</useInTotals>
-  </dimensions>
-  <dimensions uuid="b00d6938-c15d-4da5-8811-fa1d82c178b5">
-    <name>Статус</name>
-    <synonym>
-      <key>ru</key>
-      <value>Статус</value>
-    </synonym>
-    <type>
-      <types>EnumRef.СтатусыГотовностиПродукции</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -109,14 +109,14 @@
     <fullTextSearch>Use</fullTextSearch>
     <useInTotals>true</useInTotals>
   </dimensions>
-  <dimensions uuid="94b14bba-50ec-4146-ac6f-e68217ae7a14">
-    <name>Характеристики</name>
+  <dimensions uuid="82a891f6-2258-44eb-9e55-c911b3e31e4f">
+    <name>ВходнойКонтроль</name>
     <synonym>
       <key>ru</key>
-      <value>Характеристики</value>
+      <value>Входной контроль</value>
     </synonym>
     <type>
-      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+      <types>Boolean</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

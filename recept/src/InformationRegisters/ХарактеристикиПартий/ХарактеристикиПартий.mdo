@@ -198,14 +198,14 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <resources uuid="2586825e-8142-49dd-95e0-1fcee31f1c49">
-    <name>ВходнойКонтроль</name>
+  <resources uuid="feceacc4-6c89-4133-af2b-5a9506f4eccb">
+    <name>СтатусГотовностиПродукции</name>
     <synonym>
       <key>ru</key>
-      <value>Входной контроль</value>
+      <value>Статус готовности продукции</value>
     </synonym>
     <type>
-      <types>Boolean</types>
+      <types>EnumRef.СтатусыГотовностиПродукции</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -229,22 +229,6 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <dimensions uuid="eb1d3b1f-1dd1-492f-9765-213dd0e57d76">
-    <name>Партия</name>
-    <synonym>
-      <key>ru</key>
-      <value>Партия</value>
-    </synonym>
-    <type>
-      <types>DocumentRef.ВыпускПродукции</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <mainFilter>true</mainFilter>
-  </dimensions>
   <dimensions uuid="6bb5a6fe-7486-41bd-b6a7-b69d6131db42">
     <name>ХарактеристикиНоменклатуры</name>
     <synonym>
@@ -253,6 +237,22 @@
     </synonym>
     <type>
       <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="eb1d3b1f-1dd1-492f-9765-213dd0e57d76">
+    <name>Партия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ВыпускПродукции</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

@@ -23,14 +23,14 @@
     <name>РезервИДопроизводство</name>
     <synonym>
       <key>ru</key>
-      <value>Резерв и допроизводство</value>
+      <value>Резерв+Заявка</value>
     </synonym>
   </enumValues>
   <enumValues uuid="0127942c-0df9-4771-8022-b60379366c61">
     <name>ТолькоПроизводство</name>
     <synonym>
       <key>ru</key>
-      <value>Только производство</value>
+      <value>Заявка</value>
     </synonym>
   </enumValues>
 </mdclass:Enum>
