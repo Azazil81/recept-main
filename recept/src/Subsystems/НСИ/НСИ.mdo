@@ -35,4 +35,5 @@
   <content>Catalog.Комплектации</content>
   <content>AccumulationRegister.ОстаткиМатериалов</content>
   <content>Catalog.ХарактеристикиНоменклатуры</content>
+  <content>Document.ЗаказКлиента</content>
 </mdclass:Subsystem>
