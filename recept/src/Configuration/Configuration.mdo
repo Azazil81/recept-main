@@ -135,6 +135,7 @@
   <documents>Document.ВозвратОтПокупателя</documents>
   <documents>Document.АрбитражнаяПроба</documents>
   <documents>Document.Тендер</documents>
+  <documents>Document.ЗаказКлиента</documents>
   <enums>Enum.ЕдиницыИзмерения</enums>
   <enums>Enum.СписокСтатусовПроизводства</enums>
   <enums>Enum.СостояниеОбеспечения</enums>

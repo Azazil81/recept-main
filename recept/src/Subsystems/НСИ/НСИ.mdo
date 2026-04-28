@@ -36,4 +36,5 @@
   <content>AccumulationRegister.ОстаткиМатериалов</content>
   <content>Catalog.ХарактеристикиНоменклатуры</content>
   <content>InformationRegister.СтавкаНДСТовар</content>
+  <content>Document.ЗаказКлиента</content>
 </mdclass:Subsystem>
