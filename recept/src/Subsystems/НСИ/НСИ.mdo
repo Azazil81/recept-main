@@ -32,4 +32,8 @@
   <content>Document.ДокументПродажи</content>
   <content>Document.ПервоначальныеОстатки</content>
   <content>DataProcessor.АРМ_ТекущиеОстатки</content>
+  <content>Catalog.Комплектации</content>
+  <content>AccumulationRegister.ОстаткиМатериалов</content>
+  <content>Catalog.ХарактеристикиНоменклатуры</content>
+  <content>InformationRegister.СтавкаНДСТовар</content>
 </mdclass:Subsystem>

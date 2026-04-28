@@ -35,13 +35,14 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <defaultObjectForm>Document.РасходнаяНакладная.Form.ФормаДокумента</defaultObjectForm>
   <defaultListForm>Document.РасходнаяНакладная.Form.ФормаСписка</defaultListForm>
-  <defaultChoiceForm>Document.РасходнаяНакладная.Form.ФормаВыбора</defaultChoiceForm>
+  <defaultChoiceForm>Document.РасходнаяНакладная.Form.ФормаПодбора</defaultChoiceForm>
   <registerRecords>AccumulationRegister.СтоимостьМатериалов</registerRecords>
   <registerRecords>InformationRegister.СтатусПродукции</registerRecords>
   <registerRecords>InformationRegister.СведенияВПродукцииИзСчетов</registerRecords>
   <registerRecords>AccumulationRegister.ОстаткиМатериалов</registerRecords>
   <registerRecords>InformationRegister.СтатусОбеспеченияЗаказа</registerRecords>
   <registerRecords>AccumulationRegister.ПотребностьМатериалов</registerRecords>
+  <registerRecords>AccumulationRegister.ЗаказыРезервы</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="c83356fc-8263-4923-a76d-720bf156257c">
@@ -242,10 +243,10 @@
     <usePurposes>MobileDevice</usePurposes>
   </forms>
   <forms uuid="c0554fdc-42ce-4883-998b-9a84be8ad58e">
-    <name>ФормаВыбора</name>
+    <name>ФормаПодбора</name>
     <synonym>
       <key>ru</key>
-      <value>Форма выбора</value>
+      <value>Форма подбора</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
@@ -269,6 +270,7 @@
       <key>ru</key>
       <value>Товары</value>
     </synonym>
+    <fillChecking>ShowError</fillChecking>
     <attributes uuid="e271a636-097a-4f44-b5ee-82912acd3fff">
       <name>Номенклатура</name>
       <synonym>
@@ -280,6 +282,7 @@
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
       <choiceParameterLinks>
         <name>Отбор.ТипНоменклатуры</name>
         <field>Document.РасходнаяНакладная.TabularSection.Товары.Attribute.ТипНоменклатуры</field>
@@ -449,6 +452,106 @@
       </synonym>
       <type>
         <types>EnumRef.ТипыНоменклатуры</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="248ef05f-e507-44f2-a10d-7c9047fa56fb">
+      <name>ВариантОбеспеченияПоставки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вариант обеспечения поставки</value>
+      </synonym>
+      <type>
+        <types>EnumRef.ВариантОбеспеченияПоставки</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b590dca6-6676-433b-a737-6764a5e3fc22">
+      <name>ХарактеристикиНоменклатуры</name>
+      <synonym>
+        <key>ru</key>
+        <value>Характеристики номенклатуры</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="cd4a2915-02b5-4f87-98e8-216bc05873a9">
+      <name>НДССтавка</name>
+      <synonym>
+        <key>ru</key>
+        <value>НДССтавка</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>2</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="3cbba3f1-dc0d-4068-ad1e-9dfab57e3305">
+      <name>НДС</name>
+      <synonym>
+        <key>ru</key>
+        <value>НДС</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="73019acd-ec62-433f-90f2-044de0e5b31f">
+      <name>ВсегоСНДС</name>
+      <synonym>
+        <key>ru</key>
+        <value>Всего</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="a4f9a2cf-b168-4508-85d1-4acfda296213">
+      <name>ВходнойКонтроль</name>
+      <synonym>
+        <key>ru</key>
+        <value>Входной контроль</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

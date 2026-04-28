@@ -119,6 +119,8 @@
   <catalogs>Catalog.RAL</catalogs>
   <catalogs>Catalog.Фасовка</catalogs>
   <catalogs>Catalog.МестоХранения</catalogs>
+  <catalogs>Catalog.Комплектации</catalogs>
+  <catalogs>Catalog.ХарактеристикиНоменклатуры</catalogs>
   <documents>Document.ПриходнаяНакладная</documents>
   <documents>Document.СпиасниеВПроизводство</documents>
   <documents>Document.Рецептуры</documents>
@@ -149,6 +151,7 @@
   <enums>Enum.СписокСтатусовТендера</enums>
   <enums>Enum.СостояниеУчастияВТендере</enums>
   <enums>Enum.СтавкаНДС</enums>
+  <enums>Enum.ВариантОбеспеченияПоставки</enums>
   <reports>Report.СравнениеРецептур</reports>
   <reports>Report.ОстаткиМатериалов</reports>
   <reports>Report.Материалы</reports>
@@ -175,8 +178,8 @@
   <informationRegisters>InformationRegister.СведенияВПродукцииИзСчетов</informationRegisters>
   <informationRegisters>InformationRegister.СтатусОбеспеченияЗаказа</informationRegisters>
   <informationRegisters>InformationRegister.АрбитражнаяПроба</informationRegisters>
-  <informationRegisters>InformationRegister.СоставыКомплектов</informationRegisters>
   <informationRegisters>InformationRegister.ХарактеристикиПартий</informationRegisters>
+  <informationRegisters>InformationRegister.СтавкаНДСТовар</informationRegisters>
   <accumulationRegisters>AccumulationRegister.СоставРецептур</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ОстаткиМатериалов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ПотребностьМатериалов</accumulationRegisters>
@@ -184,5 +187,6 @@
   <accumulationRegisters>AccumulationRegister.СтоимостьМатериалов</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.Продано</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.СтоимостьПродажи</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ЗаказыРезервы</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.СвойстваНоменклатуры</chartsOfCharacteristicTypes>
 </mdclass:Configuration>

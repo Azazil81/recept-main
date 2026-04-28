@@ -3,221 +3,25 @@
 	<item>
 		<selection>
 			<item>
-				<field>ТоварыПродано</field>
+				<field>Товары</field>
 			</item>
 		</selection>
 		<filter>
 			<item xsi:type="FilterItemComparison">
-				<left xsi:type="dcscor:Field">Объект.Товары.Продано</left>
-				<comparisonType>Greater</comparisonType>
-				<right xsi:type="dcscor:Field">Объект.Товары.Количество</right>
-			</item>
-		</filter>
-		<appearance>
-			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>ЦветТекста</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
-			</dcscor:item>
-		</appearance>
-	</item>
-	<item>
-		<selection>
-			<item>
-				<field>Отгрузка</field>
-			</item>
-		</selection>
-		<filter>
-			<item xsi:type="FilterItemComparison">
-				<left xsi:type="dcscor:Field">Объект.Отгрузка</left>
+				<left xsi:type="dcscor:Field">Объект.Товары.ОсталосьПроизвести</left>
 				<comparisonType>Equal</comparisonType>
-				<right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыЗаказаКлиента.ЧастичноГотов</right>
-			</item>
-		</filter>
-		<appearance>
-			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>ЦветТекста</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
-			</dcscor:item>
-		</appearance>
-	</item>
-	<item>
-		<selection>
-			<item>
-				<field>Отгрузка</field>
-			</item>
-		</selection>
-		<filter>
-			<item xsi:type="FilterItemComparison">
-				<left xsi:type="dcscor:Field">Объект.Отгрузка</left>
-				<comparisonType>Equal</comparisonType>
-				<right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыЗаказаКлиента.Готов</right>
-			</item>
-		</filter>
-		<appearance>
-			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>ЦветТекста</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">#339966</dcscor:value>
-			</dcscor:item>
-		</appearance>
-	</item>
-	<item>
-		<selection>
-			<item>
-				<field>Отгрузка</field>
-			</item>
-			<item>
-				<field>ТоварыНомерСтроки</field>
-			</item>
-			<item>
-				<field>ТоварыНоменклатураКод</field>
-			</item>
-			<item>
-				<field>ТоварыНоменклатура</field>
-			</item>
-			<item>
-				<field>ТоварыНоменклатураЦвет</field>
-			</item>
-			<item>
-				<field>ТоварыНоменклатураRAL</field>
-			</item>
-			<item>
-				<field>ТоварыНоменклатураФасовка</field>
-			</item>
-			<item>
-				<field>ТоварыКоличество</field>
-			</item>
-			<item>
-				<field>ТоварыНоменклатураЕдиницаИзмеренияСырья</field>
-			</item>
-			<item>
-				<field>ТоварыЦенаПродажи</field>
-			</item>
-			<item>
-				<field>ТоварыОстаток</field>
-			</item>
-			<item>
-				<field>ТоварыСумма</field>
-			</item>
-			<item>
-				<field>ТоварыНоменклатураПримечание</field>
-			</item>
-		</selection>
-		<filter>
-			<item xsi:type="FilterItemComparison">
-				<left xsi:type="dcscor:Field">Объект.Товары.Количество</left>
-				<comparisonType>Greater</comparisonType>
 				<right xsi:type="xs:decimal">0</right>
 			</item>
 			<item xsi:type="FilterItemComparison">
-				<left xsi:type="dcscor:Field">Объект.Товары.Количество</left>
+				<left xsi:type="dcscor:Field">Объект.Проведен</left>
 				<comparisonType>Equal</comparisonType>
-				<right xsi:type="dcscor:Field">Объект.Товары.Продано</right>
+				<right xsi:type="xs:boolean">true</right>
 			</item>
 		</filter>
 		<appearance>
 			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>ЦветТекста</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">#C0C0C0</dcscor:value>
-			</dcscor:item>
-		</appearance>
-	</item>
-	<item>
-		<selection>
-			<item>
-				<field>Отгрузка</field>
-			</item>
-		</selection>
-		<filter>
-			<item xsi:type="FilterItemComparison">
-				<left xsi:type="dcscor:Field">Объект.Отгрузка</left>
-				<comparisonType>Equal</comparisonType>
-				<right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыЗаказаКлиента.Перегруз</right>
-			</item>
-		</filter>
-		<appearance>
-			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>ЦветТекста</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
-			</dcscor:item>
-		</appearance>
-	</item>
-	<item>
-		<selection>
-			<item>
-				<field>ТоварыДействие</field>
-			</item>
-		</selection>
-		<filter>
-			<item xsi:type="FilterItemComparison">
-				<left xsi:type="dcscor:Field">Объект.Товары.Действие</left>
-				<comparisonType>Equal</comparisonType>
-				<right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыГотовностиПродукции.Заявка</right>
-			</item>
-		</filter>
-		<appearance>
-			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>ЦветТекста</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">#000000</dcscor:value>
-			</dcscor:item>
-		</appearance>
-	</item>
-	<item>
-		<selection>
-			<item>
-				<field>ТоварыДействие</field>
-			</item>
-		</selection>
-		<filter>
-			<item xsi:type="FilterItemComparison">
-				<left xsi:type="dcscor:Field">Объект.Товары.Действие</left>
-				<comparisonType>Equal</comparisonType>
-				<right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыГотовностиПродукции.ГотовКОтгрузке</right>
-			</item>
-		</filter>
-		<appearance>
-			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>ЦветТекста</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">#339966</dcscor:value>
-			</dcscor:item>
-		</appearance>
-	</item>
-	<item>
-		<selection>
-			<item>
-				<field>ТоварыДействие</field>
-			</item>
-		</selection>
-		<filter>
-			<item xsi:type="FilterItemComparison">
-				<left xsi:type="dcscor:Field">Объект.Товары.Действие</left>
-				<comparisonType>Equal</comparisonType>
-				<right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыГотовностиПродукции.ВРаботе</right>
-			</item>
-		</filter>
-		<appearance>
-			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>ЦветТекста</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">#0000FF</dcscor:value>
-			</dcscor:item>
-		</appearance>
-	</item>
-	<item>
-		<selection>
-			<item>
-				<field>ТоварыДействие</field>
-			</item>
-		</selection>
-		<filter>
-			<item xsi:type="FilterItemComparison">
-				<left xsi:type="dcscor:Field">Объект.Товары.Действие</left>
-				<comparisonType>Equal</comparisonType>
-				<right xsi:type="dcscor:DesignTimeValue">Перечисление.СтатусыГотовностиПродукции.Брак</right>
-			</item>
-		</filter>
-		<appearance>
-			<dcscor:item xsi:type="SettingsParameterValue">
-				<dcscor:parameter>ЦветТекста</dcscor:parameter>
-				<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#C5FFA6</dcscor:value>
 			</dcscor:item>
 		</appearance>
 	</item>

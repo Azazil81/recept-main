@@ -155,7 +155,7 @@
   <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.НоменклатураМатериалы.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.НоменклатураМатериалы.Form.ФормаСписка</defaultListForm>
-  <defaultChoiceForm>Catalog.НоменклатураМатериалы.Form.ФормаВыбора</defaultChoiceForm>
+  <defaultChoiceForm>Catalog.НоменклатураМатериалы.Form.ФормаПодбора</defaultChoiceForm>
   <attributes uuid="8aff451b-3939-47d6-a233-2064200a8800">
     <name>Номенклатура</name>
     <synonym>
@@ -345,14 +345,14 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="5128efb8-42b1-481a-84c7-242c6b121977">
-    <name>ВходнойКонтроль</name>
+  <attributes uuid="c65fb037-56bf-4a27-a906-77e4c7937e42">
+    <name>ХарактеристикиНоменклатуры</name>
     <synonym>
       <key>ru</key>
-      <value>Входной контроль</value>
+      <value>Характеристики номенклатуры</value>
     </synonym>
     <type>
-      <types>Boolean</types>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -379,10 +379,10 @@
     <usePurposes>MobileDevice</usePurposes>
   </forms>
   <forms uuid="2d3ac4d1-4331-46dc-b865-74794131d9a3">
-    <name>ФормаВыбора</name>
+    <name>ФормаПодбора</name>
     <synonym>
       <key>ru</key>
-      <value>Форма выбора</value>
+      <value>Форма подбора</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
