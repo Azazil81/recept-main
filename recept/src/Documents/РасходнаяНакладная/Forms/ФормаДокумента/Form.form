@@ -1265,31 +1265,6 @@
     <autoCommandBar>
       <name>ТоварыКоманднаяПанель</name>
       <id>15</id>
-      <items xsi:type="form:Button">
-        <name>Подбор</name>
-        <id>182</id>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <extendedTooltip>
-          <name>ПодборРасширеннаяПодсказка</name>
-          <id>183</id>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </extendedTooltip>
-        <commandName>Form.Command.Подбор</commandName>
-        <representation>Auto</representation>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <placementArea>UserCmds</placementArea>
-        <representationInContextMenu>Auto</representationInContextMenu>
-      </items>
       <horizontalAlign>Left</horizontalAlign>
       <autoFill>true</autoFill>
     </autoCommandBar>
@@ -1529,10 +1504,6 @@
     <autoFill>true</autoFill>
   </autoCommandBar>
   <handlers>
-    <event>ChoiceProcessing</event>
-    <name>ОбработкаВыбора</name>
-  </handlers>
-  <handlers>
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
   </handlers>
@@ -1609,23 +1580,6 @@
       </columns>
     </additionalColumns>
   </attributes>
-  <formCommands>
-    <name>Подбор</name>
-    <title>
-      <key>ru</key>
-      <value>Подбор</value>
-    </title>
-    <id>1</id>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>Подбор</name>
-      </handler>
-    </action>
-    <currentRowUse>Auto</currentRowUse>
-  </formCommands>
   <commandInterface>
     <navigationPanel/>
     <commandBar/>
