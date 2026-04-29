@@ -13,6 +13,38 @@
     </dataPath>
     <titleLocation>None</titleLocation>
     <items xsi:type="form:FormField">
+      <name>Брак</name>
+      <id>77</id>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>СписокОстатков.Брак</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>БракРасширеннаяПодсказка</name>
+        <id>79</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>БракКонтекстноеМеню</name>
+        <id>78</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
+    </items>
+    <items xsi:type="form:FormField">
       <name>ТипНоменклатуры</name>
       <id>74</id>
       <enabled>true</enabled>
@@ -679,7 +711,8 @@
 	ЕСТЬNULL(ХарактеристикиПартий.ВесБазы, 0) КАК ВесБазы,
 	ЕСТЬNULL(ХарактеристикиПартий.Вес1, 0) КАК Вес1,
 	ЕСТЬNULL(ХарактеристикиПартий.Вес2, 0) КАК Вес2,
-	ЕСТЬNULL(ХарактеристикиПартий.Вес3, 0) КАК Вес3
+	ЕСТЬNULL(ХарактеристикиПартий.Вес3, 0) КАК Вес3,
+	ЕСТЬNULL(ХарактеристикиПартий.Брак, ЛОЖЬ) КАК Брак
 ИЗ
 	РегистрНакопления.ОстаткиМатериалов.Остатки(, Наименование.ТипНоменклатуры В
 	(ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Продукция), ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Комплект))) КАК
@@ -824,6 +857,18 @@
             <content>
               <key>ru</key>
               <value>Тип номенклатуры</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Брак</dataPath>
+        <field>Брак</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Брак</value>
             </content>
           </localValue>
         </title>
