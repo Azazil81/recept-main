@@ -3,7 +3,7 @@
   <name>Продукция</name>
   <synonym>
     <key>ru</key>
-    <value>Продукция</value>
+    <value>Текущие остатки</value>
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>

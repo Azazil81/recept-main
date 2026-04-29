@@ -60,6 +60,14 @@
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Выпуск продукции</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Выпуски продукции</value>
+  </listPresentation>
   <numberType>String</numberType>
   <numberLength>50</numberLength>
   <numberAllowedLength>Variable</numberAllowedLength>
