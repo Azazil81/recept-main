@@ -29,6 +29,7 @@
   <numberType>String</numberType>
   <numberLength>20</numberLength>
   <numberAllowedLength>Variable</numberAllowedLength>
+  <defaultObjectForm>Document.ЗаказКлиента.Form.ФормаДокумента</defaultObjectForm>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="a0ff7f67-7bc3-416f-8d72-e9e763af084d">
@@ -91,13 +92,21 @@
       <types>String</types>
       <stringQualifiers/>
     </type>
-    <multiLine>true</multiLine>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <forms uuid="6c71eb59-1161-424f-b9b6-d6b47b1b20da">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
   <tabularSections uuid="01e76ec9-27e0-46e0-a8f3-f7e8de6d44fe">
     <producedTypes>
       <objectType typeId="1cd43d2e-d8d1-4b29-9926-b16e00627632" valueTypeId="eacb78c9-974f-4725-8960-471705e32647"/>
@@ -108,6 +117,7 @@
       <key>ru</key>
       <value>Товары</value>
     </synonym>
+    <fillChecking>ShowError</fillChecking>
     <attributes uuid="27708fae-d9b0-4f0e-9a06-e8d3def67820">
       <name>Номенклатура</name>
       <synonym>
@@ -152,6 +162,7 @@
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>

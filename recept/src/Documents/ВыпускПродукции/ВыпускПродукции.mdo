@@ -201,6 +201,20 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
+    <attributes uuid="cfc29c44-5578-4b02-a4a2-d593eb79212e">
+      <name>Характеристики</name>
+      <synonym>
+        <key>ru</key>
+        <value>Характеристики</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
     <attributes uuid="32340529-6180-4489-a961-6910e6b71c1b">
       <name>Количество</name>
       <synonym>
@@ -266,48 +280,6 @@
           <scale>3</scale>
           <nonNegative>true</nonNegative>
         </numberQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="71d11068-b6d3-4678-ad6b-5591f4e629b6">
-      <name>Цвет</name>
-      <synonym>
-        <key>ru</key>
-        <value>Цвет</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.Цвет</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="417953f8-01b2-466d-a3c4-c4e37fe01944">
-      <name>RAL</name>
-      <synonym>
-        <key>ru</key>
-        <value>RAL</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.RAL</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="81671d8e-6ca3-473f-b562-f48ed5b4a064">
-      <name>Фасовка</name>
-      <synonym>
-        <key>ru</key>
-        <value>Фасовка</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.Фасовка</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
