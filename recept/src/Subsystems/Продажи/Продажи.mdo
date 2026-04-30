@@ -11,5 +11,5 @@
   <picture xsi:type="core:PictureRef">
     <picture>CommonPicture.Продажи</picture>
   </picture>
-  <content>Document.РасходнаяНакладная</content>
+  <content>Document.ЗаказКлиента</content>
 </mdclass:Subsystem>
