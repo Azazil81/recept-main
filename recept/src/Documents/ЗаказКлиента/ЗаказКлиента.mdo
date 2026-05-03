@@ -245,20 +245,6 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="2d305966-f1ec-464c-9367-68425aacc069">
-      <name>ВходнойКонтроль</name>
-      <synonym>
-        <key>ru</key>
-        <value>Входной контроль</value>
-      </synonym>
-      <type>
-        <types>Boolean</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
     <attributes uuid="3eadcb63-40e3-4584-b493-7cb1ca421d7b">
       <name>Производство</name>
       <synonym>

@@ -151,7 +151,6 @@
       <items xsi:type="form:FormField">
         <name>ХарактеристикиНоменклатуры</name>
         <id>99</id>
-        <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
           <common>true</common>

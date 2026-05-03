@@ -109,18 +109,4 @@
     <fullTextSearch>Use</fullTextSearch>
     <useInTotals>true</useInTotals>
   </dimensions>
-  <dimensions uuid="82a891f6-2258-44eb-9e55-c911b3e31e4f">
-    <name>ВходнойКонтроль</name>
-    <synonym>
-      <key>ru</key>
-      <value>Входной контроль</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <useInTotals>true</useInTotals>
-  </dimensions>
 </mdclass:AccumulationRegister>
