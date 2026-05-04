@@ -33,4 +33,5 @@
   <content>Report.РасшифровкаОборотовНоменклатуры</content>
   <content>InformationRegister.АрбитражнаяПроба</content>
   <content>InformationRegister.ХарактеристикиПартий</content>
+  <content>DataProcessor.ЗагрузкаОстатков</content>
 </mdclass:Subsystem>

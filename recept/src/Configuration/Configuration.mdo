@@ -16,7 +16,7 @@
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
   <vendor>Azazil</vendor>
-  <version>1.6.1.16</version>
+  <version>1.6.1.17</version>
   <usedMobileApplicationFunctionalities>
     <functionality>
       <use>true</use>
@@ -121,6 +121,7 @@
   <catalogs>Catalog.МестоХранения</catalogs>
   <catalogs>Catalog.Комплектации</catalogs>
   <catalogs>Catalog.ХарактеристикиНоменклатуры</catalogs>
+  <catalogs>Catalog.Партии</catalogs>
   <documents>Document.ПриходнаяНакладная</documents>
   <documents>Document.СпиасниеВПроизводство</documents>
   <documents>Document.Рецептуры</documents>
@@ -153,6 +154,7 @@
   <enums>Enum.СостояниеУчастияВТендере</enums>
   <enums>Enum.СтавкаНДС</enums>
   <enums>Enum.ВариантОбеспеченияПоставки</enums>
+  <enums>Enum.Брак</enums>
   <reports>Report.СравнениеРецептур</reports>
   <reports>Report.ОстаткиМатериалов</reports>
   <reports>Report.Материалы</reports>
@@ -171,6 +173,7 @@
   <reports>Report.ПродажиПоМесяцам</reports>
   <dataProcessors>DataProcessor.ТабличныйКонструкторРецептур</dataProcessors>
   <dataProcessors>DataProcessor.АРМ_ТекущиеОстатки</dataProcessors>
+  <dataProcessors>DataProcessor.ЗагрузкаОстатков</dataProcessors>
   <informationRegisters>InformationRegister.ЦеныМатериалов</informationRegisters>
   <informationRegisters>InformationRegister.ЦенаПокупки</informationRegisters>
   <informationRegisters>InformationRegister.Рецепт</informationRegisters>

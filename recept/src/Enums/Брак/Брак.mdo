@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="695bf1a0-5c63-43d7-a6a6-5b1467dc5d4c">
+  <producedTypes>
+    <refType typeId="39e404d4-abad-4137-849e-19440d764fa1" valueTypeId="0a31fc62-e934-448a-9041-e023a86f4bf8"/>
+    <listType typeId="544f37c1-9f6b-4e84-b68a-15b12e61366d" valueTypeId="87894bf4-13dd-4d4c-ae7e-71105262bf86"/>
+    <managerType typeId="2666dd29-dd1d-45c0-9489-347492bc9f9e" valueTypeId="988b87eb-c7d4-427a-be4c-8a88386be52d"/>
+  </producedTypes>
+  <name>Брак</name>
+  <synonym>
+    <key>ru</key>
+    <value>Брак</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="97bf0d23-12f2-4ea4-b4c2-a841c121f5fa">
+    <name>БРАК</name>
+    <synonym>
+      <key>ru</key>
+      <value>БРАК</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="628b44c6-c4b3-4730-ac98-b4cc2c4e049e">
+    <name>Переработка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Переработка</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

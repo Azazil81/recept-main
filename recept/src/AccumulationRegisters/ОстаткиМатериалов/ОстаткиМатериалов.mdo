@@ -52,6 +52,32 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </resources>
+  <attributes uuid="3392ad78-d6d8-4198-b7c7-4df957654d1b">
+    <name>МестоХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место хранения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.МестоХранения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="b2d007dc-2dab-4b2f-90c6-eea714980449">
+    <name>ВходнойКонтроль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Входной контроль</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
   <dimensions uuid="aca7c115-5687-4888-b802-75b776dfe401">
     <name>Наименование</name>
     <synonym>
@@ -88,7 +114,7 @@
       <value>Партия</value>
     </synonym>
     <type>
-      <types>DocumentRef.ВыпускПродукции</types>
+      <types>CatalogRef.Партии</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

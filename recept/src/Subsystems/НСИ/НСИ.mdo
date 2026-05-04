@@ -37,4 +37,5 @@
   <content>Catalog.ХарактеристикиНоменклатуры</content>
   <content>InformationRegister.СтавкаНДСТовар</content>
   <content>Document.ЗаказКлиента</content>
+  <content>Catalog.Партии</content>
 </mdclass:Subsystem>

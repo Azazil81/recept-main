@@ -139,5 +139,33 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
+    <attributes uuid="a643309d-2814-4da6-9864-67600800d368">
+      <name>Характеристика</name>
+      <synonym>
+        <key>ru</key>
+        <value>Характеристика</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4c3b3797-4ec5-4b6f-9c41-0983be4f5324">
+      <name>Партия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Партия</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Партии</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
   </tabularSections>
 </mdclass:Document>

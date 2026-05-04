@@ -181,6 +181,21 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="471c06e9-59ba-4464-bca9-92da3c92f204">
+    <name>МестоХранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место хранения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.МестоХранения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="07c6215a-15ce-4879-be4d-50c510244f67">
     <name>ФормаДокумента</name>
     <synonym>

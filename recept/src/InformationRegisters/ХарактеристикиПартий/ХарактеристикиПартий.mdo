@@ -267,7 +267,7 @@
       <value>Партия</value>
     </synonym>
     <type>
-      <types>DocumentRef.ВыпускПродукции</types>
+      <types>CatalogRef.Партии</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
