@@ -73,7 +73,7 @@
       <value>Счет</value>
     </synonym>
     <type>
-      <types>DocumentRef.РасходнаяНакладная</types>
+      <types>DocumentRef.ЗаказКлиента</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

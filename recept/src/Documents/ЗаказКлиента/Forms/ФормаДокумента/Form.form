@@ -121,6 +121,46 @@
     </extInfo>
   </items>
   <items xsi:type="form:FormField">
+    <name>ДатаОтгрузки</name>
+    <id>94</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.ДатаОтгрузки</segments>
+    </dataPath>
+    <extendedTooltip>
+      <name>ДатаОтгрузкиРасширеннаяПодсказка</name>
+      <id>96</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ДатаОтгрузкиКонтекстноеМеню</name>
+      <id>95</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
     <name>Ответственный</name>
     <id>13</id>
     <visible>true</visible>
@@ -163,6 +203,10 @@
   <items xsi:type="form:FormField">
     <name>ВходнойКонтроль</name>
     <id>87</id>
+    <title>
+      <key>ru</key>
+      <value>Требуется входной</value>
+    </title>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
@@ -242,51 +286,11 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>ТоварыХарактеристикаВладелец</name>
-      <id>81</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Объект.Товары.Характеристика.Owner</segments>
-      </dataPath>
-      <extendedTooltip>
-        <name>ТоварыХарактеристикаВладелецРасширеннаяПодсказка</name>
-        <id>83</id>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <contextMenu>
-        <name>ТоварыХарактеристикаВладелецКонтекстноеМеню</name>
-        <id>82</id>
-        <autoFill>true</autoFill>
-      </contextMenu>
-      <type>InputField</type>
-      <editMode>Enter</editMode>
-      <showInHeader>true</showInHeader>
-      <headerHorizontalAlign>Left</headerHorizontalAlign>
-      <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:InputFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <wrap>true</wrap>
-        <chooseType>true</chooseType>
-        <typeDomainEnabled>true</typeDomainEnabled>
-        <textEdit>true</textEdit>
-      </extInfo>
-    </items>
-    <items xsi:type="form:FormField">
       <name>ТоварыХарактеристика</name>
       <id>38</id>
       <title>
         <key>ru</key>
-        <value>Цвет/Фасовка</value>
+        <value>Номенклатура</value>
       </title>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -327,7 +331,7 @@
     </items>
     <items xsi:type="form:FormField">
       <name>ТоварыВходнойКонтроль</name>
-      <id>50</id>
+      <id>100</id>
       <title>
         <key>ru</key>
         <value>ВК</value>
@@ -337,9 +341,12 @@
       <userVisible>
         <common>true</common>
       </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Товары.ВходнойКонтроль</segments>
+      </dataPath>
       <extendedTooltip>
         <name>ТоварыВходнойКонтрольРасширеннаяПодсказка</name>
-        <id>52</id>
+        <id>102</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -349,13 +356,15 @@
       </extendedTooltip>
       <contextMenu>
         <name>ТоварыВходнойКонтрольКонтекстноеМеню</name>
-        <id>51</id>
+        <id>101</id>
         <autoFill>true</autoFill>
       </contextMenu>
-      <editMode>EnterOnInput</editMode>
+      <type>CheckBoxField</type>
+      <editMode>Enter</editMode>
       <showInHeader>true</showInHeader>
       <headerHorizontalAlign>Left</headerHorizontalAlign>
       <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
     </items>
     <items xsi:type="form:FormField">
       <name>ТоварыКоличество</name>
@@ -648,6 +657,46 @@
         <border xsi:type="core:BorderDef">
           <width>1</width>
         </border>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>ТоварыПримечание</name>
+      <id>97</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.Товары.Примечание</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ТоварыПримечаниеРасширеннаяПодсказка</name>
+        <id>99</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ТоварыПримечаниеКонтекстноеМеню</name>
+        <id>98</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
       </extInfo>
     </items>
     <autoCommandBar>
@@ -953,6 +1002,28 @@
     </notDefaultUseAlwaysAttributes>
     <main>true</main>
     <savedData>true</savedData>
+    <additionalColumns>
+      <tablePath xsi:type="form:DataPath">
+        <segments>Объект.Товары</segments>
+      </tablePath>
+      <columns>
+        <name>ВходнойКонтроль</name>
+        <title>
+          <key>ru</key>
+          <value>Входной контроль</value>
+        </title>
+        <id>7</id>
+        <valueType>
+          <types>Boolean</types>
+        </valueType>
+        <view>
+          <common>true</common>
+        </view>
+        <edit>
+          <common>true</common>
+        </edit>
+      </columns>
+    </additionalColumns>
   </attributes>
   <formCommands>
     <name>Подбор</name>

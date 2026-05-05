@@ -16,7 +16,7 @@
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
   <vendor>Azazil</vendor>
-  <version>1.6.1.20</version>
+  <version>1.6.1.21</version>
   <usedMobileApplicationFunctionalities>
     <functionality>
       <use>true</use>
@@ -175,6 +175,7 @@
   <dataProcessors>DataProcessor.ТабличныйКонструкторРецептур</dataProcessors>
   <dataProcessors>DataProcessor.АРМ_ТекущиеОстатки</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаОстатков</dataProcessors>
+  <dataProcessors>DataProcessor.АРМ_Заявки</dataProcessors>
   <informationRegisters>InformationRegister.ЦеныМатериалов</informationRegisters>
   <informationRegisters>InformationRegister.ЦенаПокупки</informationRegisters>
   <informationRegisters>InformationRegister.Рецепт</informationRegisters>
