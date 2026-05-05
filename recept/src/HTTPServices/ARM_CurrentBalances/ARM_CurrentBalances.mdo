@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bb9b86b1-0d91-45b7-98c2-acd25c4b6872">
+  <name>ARM_CurrentBalances</name>
+  <synonym>
+    <key>ru</key>
+    <value>ARM current balances</value>
+  </synonym>
+  <rootURL>arm</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="c57ea0b2-9599-470b-ab3a-85f8552ec6ea">
+    <name>Balances</name>
+    <synonym>
+      <key>ru</key>
+      <value>Balances</value>
+    </synonym>
+    <template>/balances</template>
+    <methods uuid="c54fe229-724c-4b28-8dc3-939ce2c5d2ab">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>BalancesGET</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

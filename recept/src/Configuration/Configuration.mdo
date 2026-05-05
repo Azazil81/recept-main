@@ -16,7 +16,7 @@
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
   <vendor>Azazil</vendor>
-  <version>1.6.1.18</version>
+  <version>1.6.1.19</version>
   <usedMobileApplicationFunctionalities>
     <functionality>
       <use>true</use>
@@ -102,6 +102,7 @@
   <httpServices>HTTPService.Заявки</httpServices>
   <httpServices>HTTPService.Сырье</httpServices>
   <httpServices>HTTPService.Продукция</httpServices>
+  <httpServices>HTTPService.ARM_CurrentBalances</httpServices>
   <commandGroups>CommandGroup.Справочники</commandGroups>
   <commandGroups>CommandGroup.Документы</commandGroups>
   <commandGroups>CommandGroup.ПланыВидовХарактеристик</commandGroups>
