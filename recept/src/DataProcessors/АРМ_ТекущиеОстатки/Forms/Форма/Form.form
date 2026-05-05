@@ -243,8 +243,8 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>ПартияНомер</name>
-      <id>56</id>
+      <name>ПартияНаименование</name>
+      <id>107</id>
       <title>
         <key>ru</key>
         <value>Партия</value>
@@ -255,11 +255,11 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>СписокОстатков.Партия.Номер</segments>
+        <segments>СписокОстатков.Партия.Наименование</segments>
       </dataPath>
       <extendedTooltip>
-        <name>ПартияНомерРасширеннаяПодсказка</name>
-        <id>58</id>
+        <name>ПартияНаименованиеРасширеннаяПодсказка</name>
+        <id>109</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -268,8 +268,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ПартияНомерКонтекстноеМеню</name>
-        <id>57</id>
+        <name>ПартияНаименованиеКонтекстноеМеню</name>
+        <id>108</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
@@ -371,8 +371,47 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>ВходнойКонтроль</name>
-      <id>83</id>
+      <name>ПартияБрак</name>
+      <id>110</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>СписокОстатков.Партия.Брак</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ПартияБракРасширеннаяПодсказка</name>
+        <id>112</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ПартияБракКонтекстноеМеню</name>
+        <id>111</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <border xsi:type="core:BorderDef">
+          <width>1</width>
+        </border>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>ПартияВходнойКонтроль</name>
+      <id>104</id>
       <title>
         <key>ru</key>
         <value>ВК</value>
@@ -383,11 +422,11 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>СписокОстатков.ВходнойКонтроль</segments>
+        <segments>СписокОстатков.Партия.ВходнойКонтроль</segments>
       </dataPath>
       <extendedTooltip>
-        <name>ВходнойКонтрольРасширеннаяПодсказка</name>
-        <id>85</id>
+        <name>ПартияВходнойКонтрольРасширеннаяПодсказка</name>
+        <id>106</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -396,8 +435,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ВходнойКонтрольКонтекстноеМеню</name>
-        <id>84</id>
+        <name>ПартияВходнойКонтрольКонтекстноеМеню</name>
+        <id>105</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>CheckBoxField</type>
@@ -435,6 +474,93 @@
       <contextMenu>
         <name>СчетНомерКонтекстноеМеню</name>
         <id>96</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>ПартияМестоХраненияНаименование</name>
+      <id>113</id>
+      <title>
+        <key>ru</key>
+        <value>Место хранения</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>СписокОстатков.Партия.МестоХранения.Наименование</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ПартияМестоХраненияНаименованиеРасширеннаяПодсказка</name>
+        <id>115</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ПартияМестоХраненияНаименованиеКонтекстноеМеню</name>
+        <id>114</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <border xsi:type="core:BorderDef">
+          <width>1</width>
+        </border>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>СчетКонтрагентНаименование</name>
+      <id>116</id>
+      <title>
+        <key>ru</key>
+        <value>Контрагент</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>СписокОстатков.Счет.Контрагент.Наименование</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>СчетКонтрагентНаименованиеРасширеннаяПодсказка</name>
+        <id>118</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>СчетКонтрагентНаименованиеКонтекстноеМеню</name>
+        <id>117</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
@@ -532,45 +658,6 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormField">
-      <name>Примечание</name>
-      <id>89</id>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>СписокОстатков.Примечание</segments>
-      </dataPath>
-      <extendedTooltip>
-        <name>ПримечаниеРасширеннаяПодсказка</name>
-        <id>91</id>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <contextMenu>
-        <name>ПримечаниеКонтекстноеМеню</name>
-        <id>90</id>
-        <autoFill>true</autoFill>
-      </contextMenu>
-      <type>LabelField</type>
-      <editMode>Enter</editMode>
-      <showInHeader>true</showInHeader>
-      <headerHorizontalAlign>Left</headerHorizontalAlign>
-      <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:LabelFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <border xsi:type="core:BorderDef">
-          <width>1</width>
-        </border>
-      </extInfo>
-    </items>
-    <items xsi:type="form:FormField">
       <name>СчетОтветственный</name>
       <id>101</id>
       <visible>true</visible>
@@ -608,6 +695,45 @@
         <chooseType>true</chooseType>
         <typeDomainEnabled>true</typeDomainEnabled>
         <textEdit>true</textEdit>
+      </extInfo>
+    </items>
+    <items xsi:type="form:FormField">
+      <name>Примечание</name>
+      <id>89</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>СписокОстатков.Примечание</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>ПримечаниеРасширеннаяПодсказка</name>
+        <id>91</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ПримечаниеКонтекстноеМеню</name>
+        <id>90</id>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>LabelField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:LabelFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <border xsi:type="core:BorderDef">
+          <width>1</width>
+        </border>
       </extInfo>
     </items>
     <autoCommandBar>
@@ -787,15 +913,11 @@
 	ЕСТЬNULL(ОстаткиМатериаловОстатки.Характеристики.RAL, &quot;—&quot;) КАК RAL,
 	ЕСТЬNULL(ОстаткиМатериаловОстатки.Характеристики.Фасовка, &quot;&quot;) КАК Фасовка,
 	ЕСТЬNULL(ОстаткиМатериаловОстатки.Наименование.ТипНоменклатуры, &quot;&quot;) КАК ТипНоменклатуры,
-	//ЕСТЬNULL(ОстаткиМатериаловОстатки.Характеристики.ВходнойКонтроль, ЛОЖЬ) КАК ВходнойКонтроль,
+	ЕСТЬNULL(ОстаткиМатериаловОстатки.Партия.ВходнойКонтроль, ЛОЖЬ) КАК ВходнойКонтроль,
+	ЕСТЬNULL(ОстаткиМатериаловОстатки.Партия.Брак, &quot;&quot;) КАК Брак,
 	ЕСТЬNULL(ЦеныМатериалов.Цена, 0) КАК Цена,
 	ОстаткиМатериаловОстатки.ОстатокОстаток * ЕСТЬNULL(ЦеныМатериалов.Цена, 0) КАК Сумма,
-	ЕСТЬNULL(ХарактеристикиПартий.ВесБазы, 0) КАК ВесБазы,
-	ЕСТЬNULL(ХарактеристикиПартий.Вес1, 0) КАК Вес1,
-	ЕСТЬNULL(ХарактеристикиПартий.Вес2, 0) КАК Вес2,
-	ЕСТЬNULL(ХарактеристикиПартий.Вес3, 0) КАК Вес3,
-	ЕСТЬNULL(ХарактеристикиПартий.Примечание, &quot;&quot;) КАК Примечание,
-	ЕСТЬNULL(ХарактеристикиПартий.Брак, ЛОЖЬ) КАК Брак
+	ЕСТЬNULL(ХарактеристикиПартий.Примечание, &quot;&quot;) КАК Примечание
 ИЗ
 	РегистрНакопления.ОстаткиМатериалов.Остатки(, Наименование.ТипНоменклатуры В
 	(ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Продукция), ЗНАЧЕНИЕ(Перечисление.ТипыНоменклатуры.Комплект))
@@ -861,54 +983,6 @@
         </title>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>ВесБазы</dataPath>
-        <field>ВесБазы</field>
-        <title>
-          <localValue>
-            <content>
-              <key>ru</key>
-              <value>Вес базы</value>
-            </content>
-          </localValue>
-        </title>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Вес1</dataPath>
-        <field>Вес1</field>
-        <title>
-          <localValue>
-            <content>
-              <key>ru</key>
-              <value>Вес1</value>
-            </content>
-          </localValue>
-        </title>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Вес2</dataPath>
-        <field>Вес2</field>
-        <title>
-          <localValue>
-            <content>
-              <key>ru</key>
-              <value>Вес2</value>
-            </content>
-          </localValue>
-        </title>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Вес3</dataPath>
-        <field>Вес3</field>
-        <title>
-          <localValue>
-            <content>
-              <key>ru</key>
-              <value>Вес3</value>
-            </content>
-          </localValue>
-        </title>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Цена</dataPath>
         <field>Цена</field>
         <title>
@@ -941,18 +1015,6 @@
         </title>
       </fields>
       <fields xsi:type="schema:DataCompositionSchemaDataSetField">
-        <dataPath>Брак</dataPath>
-        <field>Брак</field>
-        <title>
-          <localValue>
-            <content>
-              <key>ru</key>
-              <value>Брак</value>
-            </content>
-          </localValue>
-        </title>
-      </fields>
-      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
         <dataPath>Сумма</dataPath>
         <field>Сумма</field>
         <title>
@@ -975,6 +1037,34 @@
             </content>
           </localValue>
         </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВходнойКонтроль</dataPath>
+        <field>ВходнойКонтроль</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Входной контроль</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Брак</dataPath>
+        <field>Брак</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Брак</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СуммаОстаток</dataPath>
+        <field>СуммаОстаток</field>
       </fields>
       <parameters>
         <name>Период</name>
