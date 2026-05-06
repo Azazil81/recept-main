@@ -10,5 +10,5 @@
   <picture xsi:type="core:PictureRef">
     <picture>CommonPicture.ОбщаяКартинка7</picture>
   </picture>
-  <content>CommonForm.ФормаСпискаЗаявок</content>
+  <content>DataProcessor.АРМ_Заявки</content>
 </mdclass:Subsystem>
