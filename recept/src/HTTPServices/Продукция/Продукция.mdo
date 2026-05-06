@@ -14,7 +14,6 @@
       <key>ru</key>
       <value>Получить отчет текущие остатки</value>
     </synonym>
-    <template>/*</template>
     <methods uuid="aa582eb8-66cf-4304-bf43-fc07b4443393">
       <name>ПолучитьТекущие</name>
       <synonym>
