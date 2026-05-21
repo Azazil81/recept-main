@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="589ec646-f432-4cef-b60b-44f08c878d20">
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="87253fbf-c064-406b-911d-915f899fcc3e">
   <producedTypes>
-    <objectType typeId="6d01c0f8-894e-40b1-8deb-5ca13ada52a7" valueTypeId="c60d9313-543d-4b1d-bcbe-c3543213f8a6"/>
-    <refType typeId="15bad5e2-e153-49bc-b448-d438f386e977" valueTypeId="79101b37-fce6-4e78-ad51-8103626284c3"/>
-    <selectionType typeId="d20a37f4-7a18-414c-9154-5b002e716f29" valueTypeId="be50447f-600a-4558-a1b9-b39102b0614d"/>
-    <listType typeId="c64947ce-2366-4270-bedb-b3cf2cf2e6b0" valueTypeId="4c00fcd2-91d1-4f58-b49a-890b1e8e1943"/>
-    <managerType typeId="e2e47527-e864-4356-8cd0-a58c02317d65" valueTypeId="c5a6a197-35ac-42e6-b00b-c1a0507edf5c"/>
+    <objectType typeId="c33d90a1-82f3-4a05-9a22-4e1eb847d59c" valueTypeId="295bc7f8-788d-4185-ae88-e18b19499cb2"/>
+    <refType typeId="a2a9b25c-8a5c-4e47-bda0-874246aec6c2" valueTypeId="1b833020-4074-439d-9f64-a834ad46477c"/>
+    <selectionType typeId="35c7e3cf-6462-41d0-a002-863aa728e0fa" valueTypeId="b8ab7831-02cf-41af-9624-107d4e819416"/>
+    <listType typeId="759fe52e-ed95-4368-9db7-fb07a57fda50" valueTypeId="2c7094f0-6c89-49ae-bc32-aafade67c284"/>
+    <managerType typeId="7f2df77c-081c-404c-ae48-7e516928cc90" valueTypeId="778dd804-a46a-44f4-94b6-64ba1d6651c0"/>
   </producedTypes>
-  <name>Комплектации</name>
+  <name>Спецификации</name>
   <synonym>
     <key>ru</key>
-    <value>Состав комплекта</value>
+    <value>Спецификации</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <inputByString>Catalog.Комплектации.StandardAttribute.Code</inputByString>
-  <inputByString>Catalog.Комплектации.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Спецификации.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Спецификации.StandardAttribute.Description</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
@@ -31,17 +31,17 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
-  <tabularSections uuid="59efa3fe-1a17-4ad8-83fe-4cf052a48ec9">
+  <tabularSections uuid="bfa2017a-7df2-454a-bbce-01480f695531">
     <producedTypes>
-      <objectType typeId="97f03de7-b8d4-439e-8bec-cb981831a749" valueTypeId="ba7dd0d4-d966-493a-b70e-a7c856332410"/>
-      <rowType typeId="9e793e15-5323-4bdb-9f32-49b32677d11a" valueTypeId="7133f909-c6ce-4bf7-9942-0d37b775661d"/>
+      <objectType typeId="d9b3a4fc-86db-4d86-80a4-b5e7dffa9caf" valueTypeId="38c0e189-948e-4acb-b6d6-32fb9cad914f"/>
+      <rowType typeId="f18daa56-9d78-437c-88b4-b7256d53dddc" valueTypeId="6f5e55c1-b9d3-4e46-b73d-5a5041875af7"/>
     </producedTypes>
     <name>Состав</name>
     <synonym>
       <key>ru</key>
       <value>Состав</value>
     </synonym>
-    <attributes uuid="7f6907ba-32a8-492d-82ad-9b89f70a37e1">
+    <attributes uuid="7b82af32-6df8-46ba-9def-780d65b377a0">
       <name>Номенклатура</name>
       <synonym>
         <key>ru</key>
@@ -52,15 +52,14 @@
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
-      <fillChecking>ShowError</fillChecking>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="b582fb20-dd39-4866-bee2-e6143d6d65e9">
-      <name>Характеристика</name>
+    <attributes uuid="353a67bf-ec99-47a6-b52b-9663351d3861">
+      <name>Характеристики</name>
       <synonym>
         <key>ru</key>
-        <value>Характеристика</value>
+        <value>Характеристики</value>
       </synonym>
       <type>
         <types>CatalogRef.ХарактеристикиНоменклатуры</types>
@@ -70,7 +69,7 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="8a0dd863-31aa-4206-a5f2-63031a0e34f3">
+    <attributes uuid="f262e094-bd4b-45cb-b4f6-ab36198ed17d">
       <name>Количество</name>
       <synonym>
         <key>ru</key>
