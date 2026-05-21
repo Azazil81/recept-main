@@ -323,19 +323,23 @@
       <extInfo xsi:type="form:CheckBoxFieldExtInfo"/>
     </items>
     <items xsi:type="form:FormField">
-      <name>ТоварыПартияНаименование</name>
-      <id>106</id>
+      <name>ТоварыПартия</name>
+      <id>115</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.Товары.Партия.Description</segments>
+        <segments>Объект.Товары.Партия</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>ТоварыПартияПриИзменении</name>
+      </handlers>
       <extendedTooltip>
-        <name>ТоварыПартияНаименованиеРасширеннаяПодсказка</name>
-        <id>108</id>
+        <name>ТоварыПартияРасширеннаяПодсказка</name>
+        <id>117</id>
         <type>Label</type>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
@@ -344,8 +348,8 @@
         </extInfo>
       </extendedTooltip>
       <contextMenu>
-        <name>ТоварыПартияНаименованиеКонтекстноеМеню</name>
-        <id>107</id>
+        <name>ТоварыПартияКонтекстноеМеню</name>
+        <id>116</id>
         <autoFill>true</autoFill>
       </contextMenu>
       <type>InputField</type>
