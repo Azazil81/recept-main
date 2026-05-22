@@ -37,4 +37,5 @@
   <content>Document.ЗаказКлиента</content>
   <content>Catalog.Партии</content>
   <content>DataProcessor.АРМ_Заявки</content>
+  <content>Document.РеализацияТоваровУслуг</content>
 </mdclass:Subsystem>
