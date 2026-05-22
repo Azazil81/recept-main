@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f7a9595a-0ad0-46ad-b7de-d2419373f2f9">
+  <producedTypes>
+    <objectType typeId="6a7575b1-abb7-4650-a6b9-6e5697ec74b5" valueTypeId="6387c4bd-a5f1-4288-a570-fb9ea943f784"/>
+    <refType typeId="87c1e8a5-f2fe-4e41-afb3-ecca29ff1b8d" valueTypeId="4fd502d5-308e-476a-8aad-3da4060ec6b4"/>
+    <selectionType typeId="77489078-fb9a-44d4-955e-2419b892a97f" valueTypeId="62b94e75-a3d3-475b-b447-de46ca1086db"/>
+    <listType typeId="20720787-51fb-4013-8cc8-c6970ee54df5" valueTypeId="d38aade1-9937-4228-a342-e647639c34a6"/>
+    <managerType typeId="b51cb7ad-dbfa-44ea-86e1-3a49e7c04780" valueTypeId="6bebbc0d-f04a-4ccb-b544-0bfdc15692bb"/>
+  </producedTypes>
+  <name>Аналоги</name>
+  <synonym>
+    <key>ru</key>
+    <value>Аналоги</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Аналоги.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.Аналоги.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.ХарактеристикиНоменклатуры</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="e00682e5-b904-40c7-8507-5583517e6c0d">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НоменклатураМатериалы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ba858b0d-8c9d-4b2c-bf13-5ee07d75b37b">
+    <name>Характеристики</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристики</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
