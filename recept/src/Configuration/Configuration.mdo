@@ -16,7 +16,7 @@
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
   <vendor>Azazil</vendor>
-  <version>1.6.1.36</version>
+  <version>1.6.1.37</version>
   <usedMobileApplicationFunctionalities>
     <functionality>
       <use>true</use>
@@ -99,6 +99,7 @@
   <roles>Role.Технолог</roles>
   <commonModules>CommonModule.РаботаСоСправочниками</commonModules>
   <commonModules>CommonModule.РассчетЗначений</commonModules>
+  <commonModules>CommonModule.ПолучениеДанныхНоменклатуры</commonModules>
   <httpServices>HTTPService.Заявки</httpServices>
   <httpServices>HTTPService.Сырье</httpServices>
   <httpServices>HTTPService.Продукция</httpServices>
@@ -176,6 +177,7 @@
   <reports>Report.КоличествоВыпускаПродукции</reports>
   <reports>Report.ТекущиеОстатки</reports>
   <reports>Report.ПродажиПоМесяцам</reports>
+  <reports>Report.ОстаткиМатериаловВЦенахНаДату</reports>
   <dataProcessors>DataProcessor.ТабличныйКонструкторРецептур</dataProcessors>
   <dataProcessors>DataProcessor.АРМ_ТекущиеОстатки</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаОстатков</dataProcessors>

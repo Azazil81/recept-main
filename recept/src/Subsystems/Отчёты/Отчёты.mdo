@@ -30,4 +30,5 @@
   <content>Report.КоличествоВыпускаПродукции</content>
   <content>Report.ТекущиеОстатки</content>
   <content>Report.ПродажиПоМесяцам</content>
+  <content>Report.ОстаткиМатериаловВЦенахНаДату</content>
 </mdclass:Subsystem>

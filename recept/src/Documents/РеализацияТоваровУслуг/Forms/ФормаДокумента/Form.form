@@ -444,6 +444,10 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.Товары.Партия</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>ТоварыПартияПриИзменении</name>
+      </handlers>
       <extendedTooltip>
         <name>ТоварыПартияРасширеннаяПодсказка</name>
         <id>46</id>
