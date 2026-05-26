@@ -61,6 +61,22 @@
     <master>true</master>
     <mainFilter>true</mainFilter>
   </dimensions>
+  <dimensions uuid="09ce43bd-a21b-4b4d-9558-bcc607ddc001">
+    <name>Характеристика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
   <dimensions uuid="37e32590-a80f-4bf6-935b-dc6257d244cf">
     <name>Партия</name>
     <synonym>

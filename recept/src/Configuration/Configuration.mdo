@@ -200,5 +200,6 @@
   <accumulationRegisters>AccumulationRegister.Продано</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.СтоимостьПродажи</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ЗаказыРезервы</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.Продажи</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.СвойстваНоменклатуры</chartsOfCharacteristicTypes>
 </mdclass:Configuration>

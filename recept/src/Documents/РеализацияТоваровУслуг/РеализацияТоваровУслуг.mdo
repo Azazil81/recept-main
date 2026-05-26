@@ -38,6 +38,8 @@
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.РеализацияТоваровУслуг.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>AccumulationRegister.ОстаткиМатериалов</registerRecords>
+  <registerRecords>AccumulationRegister.Продажи</registerRecords>
+  <registerRecords>AccumulationRegister.ЗаказыРезервы</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="5f8e3561-39db-460c-98cb-d49cba8e2b5a">
