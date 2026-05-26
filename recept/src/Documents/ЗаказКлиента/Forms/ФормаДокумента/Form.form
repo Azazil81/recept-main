@@ -807,6 +807,10 @@
       <event>OnStartEdit</event>
       <name>ТоварыПриНачалеРедактирования</name>
     </handlers>
+    <handlers>
+      <event>AfterDeleteRow</event>
+      <name>ТоварыПослеУдаления</name>
+    </handlers>
     <searchStringAddition>
       <name>ТоварыСтрокаПоиска</name>
       <id>23</id>
@@ -961,6 +965,10 @@
     <items xsi:type="form:FormField">
       <name>СуммаДокумента</name>
       <id>10</id>
+      <title>
+        <key>ru</key>
+        <value>Сумма документа (Без НДС)</value>
+      </title>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>

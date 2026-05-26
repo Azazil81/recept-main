@@ -80,14 +80,17 @@
     <fullTextSearch>Use</fullTextSearch>
     <useInTotals>true</useInTotals>
   </dimensions>
-  <dimensions uuid="d212d155-d156-42bf-8e43-71edaac6b771">
-    <name>Партия</name>
+  <dimensions uuid="35b2992f-fb1e-44f4-949c-3a1fc24f1850">
+    <name>ДатаОтгрузки</name>
     <synonym>
       <key>ru</key>
-      <value>Партия</value>
+      <value>Дата отгрузки</value>
     </synonym>
     <type>
-      <types>CatalogRef.Партии</types>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
