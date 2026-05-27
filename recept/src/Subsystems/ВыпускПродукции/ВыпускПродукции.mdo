@@ -6,6 +6,7 @@
     <value>Выпуск продукции</value>
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
   <useOneCommand>true</useOneCommand>
   <picture xsi:type="core:PictureRef">
     <picture>CommonPicture.ОбщаяКартинка3</picture>

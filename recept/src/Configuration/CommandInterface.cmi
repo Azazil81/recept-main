@@ -45,7 +45,6 @@
     </visibilityFragments>
   </subsystemsVisibility>
   <subsystemsOrder>
-    <subsystems>Subsystem.КонструкторРецептур</subsystems>
     <subsystems>Subsystem.Материалы</subsystems>
     <subsystems>Subsystem.Покупки</subsystems>
     <subsystems>Subsystem.Рецептуры</subsystems>
@@ -58,5 +57,6 @@
     <subsystems>Subsystem.ПеремещениеПоСкладу</subsystems>
     <subsystems>Subsystem.НСИ</subsystems>
     <subsystems>Subsystem.Тендеры</subsystems>
+    <subsystems>Subsystem.ВыпускПродукции</subsystems>
   </subsystemsOrder>
 </cmi:CommandInterface>
