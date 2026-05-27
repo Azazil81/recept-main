@@ -16,7 +16,7 @@
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
   <vendor>Azazil</vendor>
-  <version>1.6.1.38</version>
+  <version>1.6.1.39</version>
   <usedMobileApplicationFunctionalities>
     <functionality>
       <use>true</use>
@@ -135,7 +135,7 @@
   <documents>Document.ПервоначальныеОстатки</documents>
   <documents>Document.КоррекцияОстатков</documents>
   <documents>Document.СписаниеНаВнутренниеПотребности</documents>
-  <documents>Document.ВыпускПродукции</documents>
+  <documents>Document.ВыпускПродукцииСтарый</documents>
   <documents>Document.Рецепт</documents>
   <documents>Document.ДокументПродажи</documents>
   <documents>Document.ВозвратОтПокупателя</documents>
@@ -143,6 +143,7 @@
   <documents>Document.Тендер</documents>
   <documents>Document.ЗаказКлиента</documents>
   <documents>Document.РеализацияТоваровУслуг</documents>
+  <documents>Document.ВыпускПродукции</documents>
   <enums>Enum.ЕдиницыИзмерения</enums>
   <enums>Enum.СписокСтатусовПроизводства</enums>
   <enums>Enum.СостояниеОбеспечения</enums>

@@ -3,7 +3,7 @@
   <commandsPlacement>
     <placementFragments>
       <group>CommandGroup.Документы</group>
-      <commands>Document.ВыпускПродукции.StandardCommand.OpenList</commands>
+      <commands>Document.ВыпускПродукцииСтарый.StandardCommand.OpenList</commands>
       <commands>Document.ДокументПродажи.StandardCommand.OpenList</commands>
       <commands>Document.КоррекцияЦены.StandardCommand.OpenList</commands>
       <commands>Document.СпиасниеВПроизводство.StandardCommand.OpenList</commands>
@@ -13,7 +13,7 @@
   <commandsOrder>
     <orderFragments>
       <group>CommandGroup.Документы</group>
-      <commands>Document.ВыпускПродукции.StandardCommand.OpenList</commands>
+      <commands>Document.ВыпускПродукцииСтарый.StandardCommand.OpenList</commands>
       <commands>Document.ДокументПродажи.StandardCommand.OpenList</commands>
       <commands>Document.КоррекцияЦены.StandardCommand.OpenList</commands>
       <commands>Document.СпиасниеВПроизводство.StandardCommand.OpenList</commands>

@@ -1775,7 +1775,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ВыпускПродукции</name>
+		<name>Document.ВыпускПродукцииСтарый</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>

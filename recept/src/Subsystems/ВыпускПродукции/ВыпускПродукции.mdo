@@ -10,4 +10,5 @@
   <picture xsi:type="core:PictureRef">
     <picture>CommonPicture.ОбщаяКартинка3</picture>
   </picture>
+  <content>Document.ВыпускПродукции</content>
 </mdclass:Subsystem>

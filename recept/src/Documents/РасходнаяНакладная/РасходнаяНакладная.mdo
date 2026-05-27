@@ -42,7 +42,6 @@
   <registerRecords>AccumulationRegister.ОстаткиМатериалов</registerRecords>
   <registerRecords>InformationRegister.СтатусОбеспеченияЗаказа</registerRecords>
   <registerRecords>AccumulationRegister.ПотребностьМатериалов</registerRecords>
-  <registerRecords>AccumulationRegister.ЗаказыРезервы</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="c83356fc-8263-4923-a76d-720bf156257c">
