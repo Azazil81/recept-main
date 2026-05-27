@@ -16,7 +16,7 @@
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
   <vendor>Azazil</vendor>
-  <version>1.6.1.40</version>
+  <version>1.6.1.41</version>
   <usedMobileApplicationFunctionalities>
     <functionality>
       <use>true</use>
@@ -144,6 +144,7 @@
   <documents>Document.ЗаказКлиента</documents>
   <documents>Document.РеализацияТоваровУслуг</documents>
   <documents>Document.ВыпускПродукции</documents>
+  <documents>Document.Производство</documents>
   <enums>Enum.ЕдиницыИзмерения</enums>
   <enums>Enum.СписокСтатусовПроизводства</enums>
   <enums>Enum.СостояниеОбеспечения</enums>
@@ -162,6 +163,8 @@
   <enums>Enum.СтавкаНДС</enums>
   <enums>Enum.ВариантОбеспеченияПоставки</enums>
   <enums>Enum.Брак</enums>
+  <enums>Enum.СостоянияСтрокЗаказов</enums>
+  <enums>Enum.ТипСпецификации</enums>
   <reports>Report.СравнениеРецептур</reports>
   <reports>Report.ОстаткиМатериалов</reports>
   <reports>Report.Материалы</reports>
@@ -202,5 +205,6 @@
   <accumulationRegisters>AccumulationRegister.СтоимостьПродажи</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ЗаказыРезервы</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.Продажи</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ЗаказыВПроизводстве</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.СвойстваНоменклатуры</chartsOfCharacteristicTypes>
 </mdclass:Configuration>

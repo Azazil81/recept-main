@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a8049e0b-b762-40e1-9117-407cd48e6af9">
+  <producedTypes>
+    <refType typeId="8de20c57-c618-4cde-849a-f0cf10e503df" valueTypeId="622fa72d-2ec3-4244-af5f-06214dfd744a"/>
+    <listType typeId="434afa3e-946b-44f4-ab7f-c022cca04394" valueTypeId="caa04624-621c-4ac5-8b4e-8d56ef434b29"/>
+    <managerType typeId="b132f634-05d1-4d14-b4f9-57c99e2495a4" valueTypeId="0418903f-8828-4f20-b4a1-2b78d3efbd3d"/>
+  </producedTypes>
+  <name>ТипСпецификации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип спецификации</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="56dbc0eb-1304-4ae6-9c15-34503b6853c7">
+    <name>Эконом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Эконом</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b92d976a-bc40-45f3-9f95-9a201beebd4d">
+    <name>Стандарт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стандарт</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="338b8ff2-cc9a-4151-87d8-6167de8dc73b">
+    <name>Премиум</name>
+    <synonym>
+      <key>ru</key>
+      <value>Премиум</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -31,6 +31,21 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <attributes uuid="f656652c-92ce-484b-983e-b273264329f3">
+    <name>ТипСпецификации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип спецификации</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипСпецификации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="bfa2017a-7df2-454a-bbce-01480f695531">
     <producedTypes>
       <objectType typeId="d9b3a4fc-86db-4d86-80a4-b5e7dffa9caf" valueTypeId="38c0e189-948e-4acb-b6d6-32fb9cad914f"/>
@@ -55,20 +70,6 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="353a67bf-ec99-47a6-b52b-9663351d3861">
-      <name>Характеристики</name>
-      <synonym>
-        <key>ru</key>
-        <value>Характеристики</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.ХарактеристикиНоменклатуры</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
     <attributes uuid="f262e094-bd4b-45cb-b4f6-ab36198ed17d">
       <name>Количество</name>
       <synonym>
@@ -82,6 +83,52 @@
           <scale>3</scale>
           <nonNegative>true</nonNegative>
         </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="adc42406-5186-4a34-a03a-09a658b63be8">
+      <name>РольКомпонента</name>
+      <synonym>
+        <key>ru</key>
+        <value>Роль компонента</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0dfb4434-af42-48c9-8045-aa9ebec1d954">
+      <name>ЭтоУслуга</name>
+      <synonym>
+        <key>ru</key>
+        <value>Это услуга</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="216b75d0-eb3f-4e2a-804a-b050f2341011">
+      <name>ЭтоТара</name>
+      <synonym>
+        <key>ru</key>
+        <value>Это тара</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
