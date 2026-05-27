@@ -155,7 +155,6 @@
   <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.НоменклатураМатериалы.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.НоменклатураМатериалы.Form.ФормаСписка</defaultListForm>
-  <defaultChoiceForm>Catalog.НоменклатураМатериалы.Form.ФормаВыбора</defaultChoiceForm>
   <attributes uuid="8aff451b-3939-47d6-a233-2064200a8800">
     <name>Номенклатура</name>
     <synonym>

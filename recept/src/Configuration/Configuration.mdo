@@ -16,7 +16,7 @@
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
   <vendor>Azazil</vendor>
-  <version>1.6.1.41</version>
+  <version>1.6.1.42</version>
   <usedMobileApplicationFunctionalities>
     <functionality>
       <use>true</use>
@@ -100,6 +100,8 @@
   <commonModules>CommonModule.РаботаСоСправочниками</commonModules>
   <commonModules>CommonModule.РассчетЗначений</commonModules>
   <commonModules>CommonModule.ПолучениеДанныхНоменклатуры</commonModules>
+  <commonModules>CommonModule.УправлениеФормамиПроизводства</commonModules>
+  <commonModules>CommonModule.УправлениеФормамиПроизводстваКлиент</commonModules>
   <httpServices>HTTPService.Заявки</httpServices>
   <httpServices>HTTPService.Сырье</httpServices>
   <httpServices>HTTPService.Продукция</httpServices>

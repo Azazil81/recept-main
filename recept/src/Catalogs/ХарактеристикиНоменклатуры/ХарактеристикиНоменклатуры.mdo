@@ -19,6 +19,22 @@
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
   <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Характеристика</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Характеристика номенклатуры</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Характеристики</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Характеристики номенклатуры</value>
+  </extendedListPresentation>
   <levelCount>2</levelCount>
   <foldersOnTop>true</foldersOnTop>
   <owners>Catalog.НоменклатураМатериалы</owners>
