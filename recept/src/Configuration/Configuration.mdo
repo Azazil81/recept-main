@@ -16,7 +16,7 @@
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
   <vendor>Azazil</vendor>
-  <version>1.6.1.42</version>
+  <version>1.6.1.43</version>
   <usedMobileApplicationFunctionalities>
     <functionality>
       <use>true</use>
@@ -113,6 +113,7 @@
   <commonForms>CommonForm.ФормаСпискаОстаткиПродукции</commonForms>
   <commonForms>CommonForm.ФормаСпискаЗаявок</commonForms>
   <commonForms>CommonForm.ФормаСпискаСырья</commonForms>
+  <commonForms>CommonForm.ФормаПодбораЗаявок</commonForms>
   <catalogs>Catalog.НоменклатураМатериалы</catalogs>
   <catalogs>Catalog.Номенклатура</catalogs>
   <catalogs>Catalog.Поставщики</catalogs>
@@ -207,6 +208,6 @@
   <accumulationRegisters>AccumulationRegister.СтоимостьПродажи</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ЗаказыРезервы</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.Продажи</accumulationRegisters>
-  <accumulationRegisters>AccumulationRegister.ЗаказыВПроизводстве</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.СтадииВыполненияЗаказов</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.СвойстваНоменклатуры</chartsOfCharacteristicTypes>
 </mdclass:Configuration>

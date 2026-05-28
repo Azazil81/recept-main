@@ -71,6 +71,7 @@
   <defaultObjectForm>Document.ЗаказКлиента.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>AccumulationRegister.ОстаткиМатериалов</registerRecords>
   <registerRecords>AccumulationRegister.ЗаказыРезервы</registerRecords>
+  <registerRecords>AccumulationRegister.СтадииВыполненияЗаказов</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="a0ff7f67-7bc3-416f-8d72-e9e763af084d">

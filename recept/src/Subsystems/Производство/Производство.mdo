@@ -11,5 +11,5 @@
   <picture xsi:type="core:PictureRef">
     <picture>CommonPicture.Производство</picture>
   </picture>
-  <content>Document.Рецептуры</content>
+  <content>Document.Производство</content>
 </mdclass:Subsystem>
